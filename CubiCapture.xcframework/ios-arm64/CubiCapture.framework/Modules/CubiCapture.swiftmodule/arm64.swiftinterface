@@ -1,0 +1,73 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.1 effective-4.2 (swiftlang-1200.0.41 clang-1200.0.32.8)
+// swift-module-flags: -target arm64-apple-ios12.2 -enable-objc-interop -enable-library-evolution -swift-version 4.2 -enforce-exclusivity=checked -O -module-name CubiCapture
+import ARKit
+import AVFoundation
+import CoreMotion
+@_exported import CubiCapture
+import Foundation
+import SceneKit
+import Swift
+import SwiftyJSON
+import UIKit
+import Zip
+extension UIDevice {
+  public static let modelName: Swift.String
+}
+public typealias VideoWriterCompletionBlock = (Foundation.URL) -> Swift.Void
+@objc public class VideoWriter : ObjectiveC.NSObject {
+  public init(codec: Swift.String, width: Swift.Int, height: Swift.Int, folderName: Swift.String)
+  public func startWriting(frame: ARKit.ARFrame) -> Swift.Bool
+  public func stopWriting(completion: @escaping CubiCapture.VideoWriterCompletionBlock)
+  @objc deinit
+  @objc override dynamic public init()
+}
+public protocol CCCcaptureDelegate : AnyObject {
+  func processReadyDelegationFunc(_ controller: CubiCapture.CCCapture)
+  func dataZippedDelegationFunc(_ controller: CubiCapture.CCCapture)
+  func zippedDataLocation(_ controller: CubiCapture.CCCapture, location: Foundation.URL)
+  func scanTrackingFailed(_ controller: CubiCapture.CCCapture)
+  func messenger(_ controller: CubiCapture.CCCapture, errorCode: Swift.Int, message: Swift.String)
+}
+@objc @_inheritsConvenienceInitializers public class CCCapture : ARKit.ARSCNView, ARKit.ARSCNViewDelegate, ARKit.ARSessionDelegate {
+  weak public var delegateCapture: CubiCapture.CCCcaptureDelegate?
+  public var recordButton: UIKit.UIButton
+  public var timerLabel: UIKit.UILabel
+  public var progressSpinner: UIKit.UIActivityIndicatorView
+  public var guideImage: UIKit.UIImageView
+  public var fileName: Swift.String
+  public var number: Swift.String
+  public var postCode: Swift.String
+  public var city: Swift.String
+  public var state: Swift.String
+  public var country: Swift.String
+  public var suite: Swift.String
+  public var warningTextMovement: Swift.String
+  public var warningTextDark: Swift.String
+  public var warningTextLost: Swift.String
+  public var crabWalkImageRight: UIKit.UIImage
+  public var crabWalkImageLeft: UIKit.UIImage
+  public var greendBorderImage: UIKit.UIImage
+  public var orangeBorderImage: UIKit.UIImage
+  public var ceilingWarningImage: UIKit.UIImage
+  public var floorWarningImage: UIKit.UIImage
+  public var rotatePhoneWarningImage: UIKit.UIImage
+  public var startHereToScanImage: UIKit.UIImage
+  public func setView(sceneToController: UIKit.UIViewController)
+  @objc public func session(_ session: ARKit.ARSession, didUpdate frame: ARKit.ARFrame)
+  @objc public func session(_ session: ARKit.ARSession, cameraDidChangeTrackingState camera: ARKit.ARCamera)
+  public func startCapture()
+  public func endCaptureSession()
+  public func removeScan()
+  @objc deinit
+  @objc override dynamic public init(frame: CoreGraphics.CGRect, options: [Swift.String : Any]? = nil)
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+extension CCCapture : CubiCapture.CCCcaptureDelegate {
+  public func dataZippedDelegationFunc(_ controller: CubiCapture.CCCapture)
+  public func zippedDataLocation(_ controller: CubiCapture.CCCapture, location: Foundation.URL)
+  public func messenger(_ controller: CubiCapture.CCCapture, errorCode: Swift.Int, message: Swift.String)
+  public func scanTrackingFailed(_ controller: CubiCapture.CCCapture)
+  public func processReadyDelegationFunc(_ controller: CubiCapture.CCCapture)
+}
