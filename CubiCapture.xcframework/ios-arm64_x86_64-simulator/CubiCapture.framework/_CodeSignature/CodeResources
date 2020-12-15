@@ -4,57 +4,9 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>AssetsFramework.bundle/ceiling-warning.png</key>
-		<data>
-		QG7byLeUSklqxY3kvVRw5itQ4gU=
-		</data>
-		<key>AssetsFramework.bundle/left-warning.png</key>
-		<data>
-		TqFJ5DmDEUcz3m2aNm7dqLrsAfo=
-		</data>
-		<key>AssetsFramework.bundle/lift-phone-warning.png</key>
-		<data>
-		P70Rc8E8uXC0kAHOIKq+wh6A6vg=
-		</data>
-		<key>AssetsFramework.bundle/not_recording.png</key>
-		<data>
-		aZmiMB1CHGEN4FIIxS3Ou4yUVTE=
-		</data>
-		<key>AssetsFramework.bundle/recording.png</key>
-		<data>
-		1HUABXB7jQNzhNuae68OHMvX8Vo=
-		</data>
-		<key>AssetsFramework.bundle/right-warning.png</key>
-		<data>
-		BlMLUeeB53e77dR0e43+rJHudPY=
-		</data>
-		<key>AssetsFramework.bundle/rotate-warning.png</key>
-		<data>
-		+Fae9QrLGy1/Cg5MGWgOBR7T5y4=
-		</data>
-		<key>AssetsFramework.bundle/status-ok.png</key>
-		<data>
-		QN/u3aKxpFX27nruC12+GjzeMTI=
-		</data>
-		<key>AssetsFramework.bundle/status-start.png</key>
-		<data>
-		bcYsfavrxPxdh3he3FdgCV3hzNM=
-		</data>
-		<key>AssetsFramework.bundle/status-unsure.png</key>
-		<data>
-		GkLBIjaKbXd2xpOdOymocu97G74=
-		</data>
-		<key>AssetsFramework.bundle/turn-screen.png</key>
-		<data>
-		w1rd+hjxY/gxnzAUxNxEEpctwPo=
-		</data>
-		<key>AssetsFramework.bundle/yellow-warning.wav</key>
-		<data>
-		7RXnGLYDZ7gtgPVxhK+ln8u0IaE=
-		</data>
 		<key>Headers/CubiCapture-Swift.h</key>
 		<data>
-		YgxAXgl4vKLFLaciW6l88iilvl4=
+		7xciAKjKce0K8baT2VQTZfwhqBc=
 		</data>
 		<key>Headers/CubiCapture.h</key>
 		<data>
@@ -62,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		xKOMYUMIE8k0Tbh3BLDv7NoGoIA=
+		xfuhInGU3LhcDC87UTgSmAyOfmI=
 		</data>
 		<key>Modules/CubiCapture.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -70,11 +22,11 @@
 		</data>
 		<key>Modules/CubiCapture.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		MDt8QkQWKEiee6VemeZQuOTk+R0=
+		hmQcfQ+hhzsC9m52rsDeZBxEG5A=
 		</data>
 		<key>Modules/CubiCapture.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		XmOpTW0fsKCgcVQODZpBOvZ75F4=
+		W3kLMJ1gcQkOxSF7kAfgngXywhY=
 		</data>
 		<key>Modules/CubiCapture.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -82,11 +34,11 @@
 		</data>
 		<key>Modules/CubiCapture.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		MDt8QkQWKEiee6VemeZQuOTk+R0=
+		hmQcfQ+hhzsC9m52rsDeZBxEG5A=
 		</data>
 		<key>Modules/CubiCapture.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		XmOpTW0fsKCgcVQODZpBOvZ75F4=
+		W3kLMJ1gcQkOxSF7kAfgngXywhY=
 		</data>
 		<key>Modules/CubiCapture.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -94,11 +46,11 @@
 		</data>
 		<key>Modules/CubiCapture.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		5B0mb5zGvQPbVfpgLYDwCHgd4t4=
+		7BX13BqideKMkxU/cYeTK41+O7M=
 		</data>
 		<key>Modules/CubiCapture.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		cFiN8nurndODH8LG1V/QIT81VII=
+		aMK0E7ZuVtv1XW7y9Q28OtR3WmE=
 		</data>
 		<key>Modules/CubiCapture.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -106,11 +58,11 @@
 		</data>
 		<key>Modules/CubiCapture.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		5B0mb5zGvQPbVfpgLYDwCHgd4t4=
+		7BX13BqideKMkxU/cYeTK41+O7M=
 		</data>
 		<key>Modules/CubiCapture.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		cFiN8nurndODH8LG1V/QIT81VII=
+		aMK0E7ZuVtv1XW7y9Q28OtR3WmE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -167,95 +119,11 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>AssetsFramework.bundle/ceiling-warning.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			3chheNfdEZwVEKXnNrYiLXtYA/MSFerTBat+iJZNWCI=
-			</data>
-		</dict>
-		<key>AssetsFramework.bundle/left-warning.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			3fBG/9OIfq9nhJO3fgKBTbOHYYGBAQFL6eESgZbFqrI=
-			</data>
-		</dict>
-		<key>AssetsFramework.bundle/lift-phone-warning.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			IisG3+5W4tT4JnP54oCHQK2jSiOmGJ0rZb0wBObXquo=
-			</data>
-		</dict>
-		<key>AssetsFramework.bundle/not_recording.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			tn1n7JrYrGKpJxwf2/FXfEXAnLVWOQ9IQ0dPoBrjcDw=
-			</data>
-		</dict>
-		<key>AssetsFramework.bundle/recording.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			3vlJ90Gah4Xgq28tiUg/8rhzpDNzRfdDBfNXIfzoQO4=
-			</data>
-		</dict>
-		<key>AssetsFramework.bundle/right-warning.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			LnUfqpQXD8fhDwDrg6hdFR+w90Ky/0UW4NQ1ICl+xEA=
-			</data>
-		</dict>
-		<key>AssetsFramework.bundle/rotate-warning.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			rDN0lWjXUL3jrKYZtMcxtLV/R0xHsnbIKHJCu/We+OE=
-			</data>
-		</dict>
-		<key>AssetsFramework.bundle/status-ok.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			O5u6MZZ5k7gR8729N7s7I4Ts6bXvhHabN4TmBCNOUEk=
-			</data>
-		</dict>
-		<key>AssetsFramework.bundle/status-start.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			OBySU7V6dqmtDBBiFsuoBDpMPSgLkjJB3KXR+bwykUw=
-			</data>
-		</dict>
-		<key>AssetsFramework.bundle/status-unsure.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			2myCgOfbc8oFed0KmmDK3fO20V7oHUN1D7SA1olzx04=
-			</data>
-		</dict>
-		<key>AssetsFramework.bundle/turn-screen.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			kNvtcJXAmwX43lsFN+nHWMXuJ7cR3tT3+o0oFPz73YE=
-			</data>
-		</dict>
-		<key>AssetsFramework.bundle/yellow-warning.wav</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			tXuev6lmYv8FCzKCbAGLQzBK+5p8C45q4EEbC57iCjY=
-			</data>
-		</dict>
 		<key>Headers/CubiCapture-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ImCz4z9Jop0fUZOKUkJKnDxBmqfCeUgqEwg2muE5GIM=
+			DYgW9t3rE6fGCq9jEsbfypjqoiwYIu9YkwKOn97zWv0=
 			</data>
 		</dict>
 		<key>Headers/CubiCapture.h</key>
@@ -276,14 +144,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4ZB5XV8diRwWHDcbFjdlWm/SnvwnMnCPF3LOOmDUJRQ=
+			eH4N9G3m2scTE4YaG186rcXeiptwhNq8BjjmXgMJqfw=
 			</data>
 		</dict>
 		<key>Modules/CubiCapture.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PgywsJCeaWWHY8aa8UoKOyu1e11xg30zcidcqHDuo5Q=
+			jTBUykr8erM+ul607/8IIUFpvC3sI9LMA5xbgy1sCPI=
 			</data>
 		</dict>
 		<key>Modules/CubiCapture.swiftmodule/arm64.swiftdoc</key>
@@ -297,14 +165,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4ZB5XV8diRwWHDcbFjdlWm/SnvwnMnCPF3LOOmDUJRQ=
+			eH4N9G3m2scTE4YaG186rcXeiptwhNq8BjjmXgMJqfw=
 			</data>
 		</dict>
 		<key>Modules/CubiCapture.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PgywsJCeaWWHY8aa8UoKOyu1e11xg30zcidcqHDuo5Q=
+			jTBUykr8erM+ul607/8IIUFpvC3sI9LMA5xbgy1sCPI=
 			</data>
 		</dict>
 		<key>Modules/CubiCapture.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -318,14 +186,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			w7/vhvAvAtE/hPFgwjI279q/q4sg5V4e+aAYUbcXlqs=
+			pMNPlIXBFqN0bWUZH5UWDRWkmKtRxzkUbCwmfonUyxM=
 			</data>
 		</dict>
 		<key>Modules/CubiCapture.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HQlhNxfHad2MBnkic7mI1W313ctBXbEeIqPPAlPxfCU=
+			5zq1xA+VvY/m7tS5JGm45iVvCPjrT1gmx6jeFxX2G4A=
 			</data>
 		</dict>
 		<key>Modules/CubiCapture.swiftmodule/x86_64.swiftdoc</key>
@@ -339,14 +207,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			w7/vhvAvAtE/hPFgwjI279q/q4sg5V4e+aAYUbcXlqs=
+			pMNPlIXBFqN0bWUZH5UWDRWkmKtRxzkUbCwmfonUyxM=
 			</data>
 		</dict>
 		<key>Modules/CubiCapture.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HQlhNxfHad2MBnkic7mI1W313ctBXbEeIqPPAlPxfCU=
+			5zq1xA+VvY/m7tS5JGm45iVvCPjrT1gmx6jeFxX2G4A=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

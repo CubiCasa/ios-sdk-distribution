@@ -22,19 +22,15 @@ public typealias VideoWriterCompletionBlock = (Foundation.URL) -> Swift.Void
   @objc deinit
   @objc override dynamic public init()
 }
-public protocol CCCcaptureDelegate : AnyObject {
+public protocol CCCaptureDelegate : AnyObject {
   func processReadyDelegationFunc(_ controller: CubiCapture.CCCapture)
   func dataZippedDelegationFunc(_ controller: CubiCapture.CCCapture)
   func zippedDataLocation(_ controller: CubiCapture.CCCapture, location: Foundation.URL)
   func scanTrackingFailed(_ controller: CubiCapture.CCCapture)
   func messenger(_ controller: CubiCapture.CCCapture, errorCode: Swift.Int, message: Swift.String)
 }
-@objc @_inheritsConvenienceInitializers public class CCCapture : ARKit.ARSCNView, ARKit.ARSCNViewDelegate, ARKit.ARSessionDelegate {
-  weak public var delegateCapture: CubiCapture.CCCcaptureDelegate?
-  public var recordButton: UIKit.UIButton
-  public var timerLabel: UIKit.UILabel
-  public var progressSpinner: UIKit.UIActivityIndicatorView
-  public var guideImage: UIKit.UIImageView
+@objc @_inheritsConvenienceInitializers public class CCCapture : UIKit.UIView, ARKit.ARSCNViewDelegate, ARKit.ARSessionDelegate {
+  weak public var delegateCapture: CubiCapture.CCCaptureDelegate?
   public var fileName: Swift.String
   public var number: Swift.String
   public var postCode: Swift.String
@@ -45,9 +41,10 @@ public protocol CCCcaptureDelegate : AnyObject {
   public var warningTextMovement: Swift.String
   public var warningTextDark: Swift.String
   public var warningTextLost: Swift.String
+  public var warningTextInitializing: Swift.String
   public var crabWalkImageRight: UIKit.UIImage
   public var crabWalkImageLeft: UIKit.UIImage
-  public var greendBorderImage: UIKit.UIImage
+  public var greenBorderImage: UIKit.UIImage
   public var orangeBorderImage: UIKit.UIImage
   public var ceilingWarningImage: UIKit.UIImage
   public var floorWarningImage: UIKit.UIImage
@@ -60,14 +57,6 @@ public protocol CCCcaptureDelegate : AnyObject {
   public func endCaptureSession()
   public func removeScan()
   @objc deinit
-  @objc override dynamic public init(frame: CoreGraphics.CGRect, options: [Swift.String : Any]? = nil)
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
-}
-extension CCCapture : CubiCapture.CCCcaptureDelegate {
-  public func dataZippedDelegationFunc(_ controller: CubiCapture.CCCapture)
-  public func zippedDataLocation(_ controller: CubiCapture.CCCapture, location: Foundation.URL)
-  public func messenger(_ controller: CubiCapture.CCCapture, errorCode: Swift.Int, message: Swift.String)
-  public func scanTrackingFailed(_ controller: CubiCapture.CCCapture)
-  public func processReadyDelegationFunc(_ controller: CubiCapture.CCCapture)
 }
