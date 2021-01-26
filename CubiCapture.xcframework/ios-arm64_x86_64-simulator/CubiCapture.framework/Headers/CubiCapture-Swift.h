@@ -193,6 +193,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import ARKit;
 @import CoreGraphics;
 @import ObjectiveC;
+@import SceneKit;
 @import UIKit;
 #endif
 
@@ -211,18 +212,40 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
-@class ARSession;
-@class ARFrame;
-@class ARCamera;
+
 @class NSCoder;
 
 SWIFT_CLASS("_TtC11CubiCapture9CCCapture")
-@interface CCCapture : UIView <ARSCNViewDelegate, ARSessionDelegate>
-- (void)session:(ARSession * _Nonnull)session didUpdateFrame:(ARFrame * _Nonnull)frame;
-- (void)session:(ARSession * _Nonnull)session cameraDidChangeTrackingState:(ARCamera * _Nonnull)camera;
+@interface CCCapture : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
+
+
+@class ARSession;
+@class ARFrame;
+@class ARCamera;
+
+@interface CCCapture (SWIFT_EXTENSION(CubiCapture)) <ARSessionDelegate>
+- (void)session:(ARSession * _Nonnull)session didUpdateFrame:(ARFrame * _Nonnull)frame;
+- (void)session:(ARSession * _Nonnull)session cameraDidChangeTrackingState:(ARCamera * _Nonnull)camera;
+@end
+
+@protocol SCNSceneRenderer;
+@class ARAnchor;
+@class SCNNode;
+
+@interface CCCapture (SWIFT_EXTENSION(CubiCapture)) <ARSCNViewDelegate>
+///
+- (SCNNode * _Nullable)renderer:(id <SCNSceneRenderer> _Nonnull)renderer nodeForAnchor:(ARAnchor * _Nonnull)anchor SWIFT_WARN_UNUSED_RESULT;
+///
+- (void)renderer:(id <SCNSceneRenderer> _Nonnull)renderer didUpdateNode:(SCNNode * _Nonnull)node forAnchor:(ARAnchor * _Nonnull)anchor;
+@end
+
+
+
 
 
 
@@ -432,6 +455,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import ARKit;
 @import CoreGraphics;
 @import ObjectiveC;
+@import SceneKit;
 @import UIKit;
 #endif
 
@@ -450,18 +474,40 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
-@class ARSession;
-@class ARFrame;
-@class ARCamera;
+
 @class NSCoder;
 
 SWIFT_CLASS("_TtC11CubiCapture9CCCapture")
-@interface CCCapture : UIView <ARSCNViewDelegate, ARSessionDelegate>
-- (void)session:(ARSession * _Nonnull)session didUpdateFrame:(ARFrame * _Nonnull)frame;
-- (void)session:(ARSession * _Nonnull)session cameraDidChangeTrackingState:(ARCamera * _Nonnull)camera;
+@interface CCCapture : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
+
+
+@class ARSession;
+@class ARFrame;
+@class ARCamera;
+
+@interface CCCapture (SWIFT_EXTENSION(CubiCapture)) <ARSessionDelegate>
+- (void)session:(ARSession * _Nonnull)session didUpdateFrame:(ARFrame * _Nonnull)frame;
+- (void)session:(ARSession * _Nonnull)session cameraDidChangeTrackingState:(ARCamera * _Nonnull)camera;
+@end
+
+@protocol SCNSceneRenderer;
+@class ARAnchor;
+@class SCNNode;
+
+@interface CCCapture (SWIFT_EXTENSION(CubiCapture)) <ARSCNViewDelegate>
+///
+- (SCNNode * _Nullable)renderer:(id <SCNSceneRenderer> _Nonnull)renderer nodeForAnchor:(ARAnchor * _Nonnull)anchor SWIFT_WARN_UNUSED_RESULT;
+///
+- (void)renderer:(id <SCNSceneRenderer> _Nonnull)renderer didUpdateNode:(SCNNode * _Nonnull)node forAnchor:(ARAnchor * _Nonnull)anchor;
+@end
+
+
+
 
 
 
