@@ -133,7 +133,6 @@ extension UIKit.UIImage {
 public struct CaptureOptions : Swift.OptionSet, Swift.CaseIterable {
   public init(rawValue: Swift.Int)
   public let rawValue: Swift.Int
-  public static let speechRecognition: CubiCapture.CaptureOptions
   public static let meshVisualisation: CubiCapture.CaptureOptions
   public static let backgroundResume: CubiCapture.CaptureOptions
   public static let azimuth: CubiCapture.CaptureOptions
@@ -154,15 +153,6 @@ extension CubiCapture.CaptureOptions : Swift.Encodable {
   @objc deinit
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func loadView()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
-}
-public enum CCScanningOrientation {
-  case landscape
-  case portrait
-  public static func == (a: CubiCapture.CCScanningOrientation, b: CubiCapture.CCScanningOrientation) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
 }
 public protocol CCCaptureDelegate : AnyObject {
   func processReadyDelegationFunc(_ controller: CubiCapture.CCCapture)
@@ -186,7 +176,7 @@ public protocol CCCaptureDelegate : AnyObject {
   @_Concurrency.MainActor(unsafe) public var country: Swift.String
   @_Concurrency.MainActor(unsafe) public var suite: Swift.String
   @_Concurrency.MainActor(unsafe) public var propertyType: CubiCapture.CCPropertyType
-  @_Concurrency.MainActor(unsafe) public init(with propType: CubiCapture.CCPropertyType, orientation: CubiCapture.CCScanningOrientation = .landscape, usesRawDepth: Swift.Bool = false)
+  @_Concurrency.MainActor(unsafe) public init(with propType: CubiCapture.CCPropertyType, usesRawDepth: Swift.Bool = false)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) public func show(presenter: UIKit.UIViewController?)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
@@ -218,5 +208,3 @@ extension CubiCapture.PhotoCapturerError : Swift.Hashable {}
 extension CubiCapture.CCPropertyType : Swift.Equatable {}
 extension CubiCapture.CCPropertyType : Swift.Hashable {}
 extension CubiCapture.CCPropertyType : Swift.RawRepresentable {}
-extension CubiCapture.CCScanningOrientation : Swift.Equatable {}
-extension CubiCapture.CCScanningOrientation : Swift.Hashable {}

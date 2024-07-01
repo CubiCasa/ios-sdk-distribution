@@ -3528,54 +3528,6 @@
           },
           {
             "kind": "Var",
-            "name": "speechRecognition",
-            "printedName": "speechRecognition",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "CaptureOptions",
-                "printedName": "CubiCapture.CaptureOptions",
-                "usr": "s:11CubiCapture0B7OptionsV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11CubiCapture0B7OptionsV17speechRecognitionACvpZ",
-            "mangledName": "$s11CubiCapture0B7OptionsV17speechRecognitionACvpZ",
-            "moduleName": "CubiCapture",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CaptureOptions",
-                    "printedName": "CubiCapture.CaptureOptions",
-                    "usr": "s:11CubiCapture0B7OptionsV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11CubiCapture0B7OptionsV17speechRecognitionACvgZ",
-                "mangledName": "$s11CubiCapture0B7OptionsV17speechRecognitionACvgZ",
-                "moduleName": "CubiCapture",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "meshVisualisation",
             "printedName": "meshVisualisation",
             "children": [
@@ -3594,7 +3546,8 @@
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -4569,206 +4522,6 @@
         "printedName": "CoreMotion",
         "declKind": "Import",
         "moduleName": "CubiCapture"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "CCScanningOrientation",
-        "printedName": "CCScanningOrientation",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "landscape",
-            "printedName": "landscape",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(CubiCapture.CCScanningOrientation.Type) -> CubiCapture.CCScanningOrientation",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CCScanningOrientation",
-                    "printedName": "CubiCapture.CCScanningOrientation",
-                    "usr": "s:11CubiCapture21CCScanningOrientationO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "CubiCapture.CCScanningOrientation.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CCScanningOrientation",
-                        "printedName": "CubiCapture.CCScanningOrientation",
-                        "usr": "s:11CubiCapture21CCScanningOrientationO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:11CubiCapture21CCScanningOrientationO9landscapeyA2CmF",
-            "mangledName": "$s11CubiCapture21CCScanningOrientationO9landscapeyA2CmF",
-            "moduleName": "CubiCapture"
-          },
-          {
-            "kind": "Var",
-            "name": "portrait",
-            "printedName": "portrait",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(CubiCapture.CCScanningOrientation.Type) -> CubiCapture.CCScanningOrientation",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CCScanningOrientation",
-                    "printedName": "CubiCapture.CCScanningOrientation",
-                    "usr": "s:11CubiCapture21CCScanningOrientationO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "CubiCapture.CCScanningOrientation.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CCScanningOrientation",
-                        "printedName": "CubiCapture.CCScanningOrientation",
-                        "usr": "s:11CubiCapture21CCScanningOrientationO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:11CubiCapture21CCScanningOrientationO8portraityA2CmF",
-            "mangledName": "$s11CubiCapture21CCScanningOrientationO8portraityA2CmF",
-            "moduleName": "CubiCapture"
-          },
-          {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CCScanningOrientation",
-                "printedName": "CubiCapture.CCScanningOrientation",
-                "usr": "s:11CubiCapture21CCScanningOrientationO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CCScanningOrientation",
-                "printedName": "CubiCapture.CCScanningOrientation",
-                "usr": "s:11CubiCapture21CCScanningOrientationO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:11CubiCapture21CCScanningOrientationO2eeoiySbAC_ACtFZ",
-            "mangledName": "$s11CubiCapture21CCScanningOrientationO2eeoiySbAC_ACtFZ",
-            "moduleName": "CubiCapture",
-            "static": true,
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Var",
-            "name": "hashValue",
-            "printedName": "hashValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11CubiCapture21CCScanningOrientationO9hashValueSivp",
-            "mangledName": "$s11CubiCapture21CCScanningOrientationO9hashValueSivp",
-            "moduleName": "CubiCapture",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11CubiCapture21CCScanningOrientationO9hashValueSivg",
-                "mangledName": "$s11CubiCapture21CCScanningOrientationO9hashValueSivg",
-                "moduleName": "CubiCapture",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "hash",
-            "printedName": "hash(into:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Hasher",
-                "printedName": "Swift.Hasher",
-                "paramValueOwnership": "InOut",
-                "usr": "s:s6HasherV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:11CubiCapture21CCScanningOrientationO4hash4intoys6HasherVz_tF",
-            "mangledName": "$s11CubiCapture21CCScanningOrientationO4hash4intoys6HasherVz_tF",
-            "moduleName": "CubiCapture",
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:11CubiCapture21CCScanningOrientationO",
-        "mangledName": "$s11CubiCapture21CCScanningOrientationO",
-        "moduleName": "CubiCapture",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          }
-        ]
       },
       {
         "kind": "TypeDecl",
@@ -5970,7 +5723,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(with:orientation:usesRawDepth:)",
+            "printedName": "init(with:usesRawDepth:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5986,13 +5739,6 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "CCScanningOrientation",
-                "printedName": "CubiCapture.CCScanningOrientation",
-                "hasDefaultArg": true,
-                "usr": "s:11CubiCapture21CCScanningOrientationO"
-              },
-              {
-                "kind": "TypeNominal",
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "hasDefaultArg": true,
@@ -6000,8 +5746,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:11CubiCapture9CCCaptureC4with11orientation12usesRawDepthAcA14CCPropertyTypeO_AA21CCScanningOrientationOSbtcfc",
-            "mangledName": "$s11CubiCapture9CCCaptureC4with11orientation12usesRawDepthAcA14CCPropertyTypeO_AA21CCScanningOrientationOSbtcfc",
+            "usr": "s:11CubiCapture9CCCaptureC4with12usesRawDepthAcA14CCPropertyTypeO_Sbtcfc",
+            "mangledName": "$s11CubiCapture9CCCaptureC4with12usesRawDepthAcA14CCPropertyTypeO_Sbtcfc",
             "moduleName": "CubiCapture",
             "declAttributes": [
               "Custom",
@@ -11787,7 +11533,7 @@
       "kind": "IntegerLiteral",
       "offset": 529,
       "length": 1,
-      "value": "0"
+      "value": "1"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CaptureOptions.swift",
@@ -11801,75 +11547,61 @@
       "kind": "IntegerLiteral",
       "offset": 604,
       "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CaptureOptions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 674,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CaptureOptions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 679,
-      "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CaptureOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 739,
+      "offset": 664,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CaptureOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 744,
+      "offset": 669,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CaptureOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 812,
+      "offset": 737,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CaptureOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 817,
+      "offset": 742,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CaptureOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 888,
+      "offset": 813,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CaptureOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 893,
+      "offset": 818,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CaptureOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 960,
+      "offset": 885,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CaptureOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 965,
+      "offset": 890,
       "length": 1,
       "value": "6"
     },
@@ -12058,196 +11790,196 @@
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
       "kind": "Array",
-      "offset": 1337,
+      "offset": 1199,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
       "kind": "StringLiteral",
-      "offset": 1451,
+      "offset": 1313,
       "length": 9,
       "value": "\"default\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
       "kind": "StringLiteral",
-      "offset": 1493,
+      "offset": 1355,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
       "kind": "StringLiteral",
-      "offset": 1530,
+      "offset": 1392,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
       "kind": "StringLiteral",
-      "offset": 1563,
+      "offset": 1425,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
       "kind": "StringLiteral",
-      "offset": 1597,
+      "offset": 1459,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
       "kind": "StringLiteral",
-      "offset": 1633,
+      "offset": 1495,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
       "kind": "StringLiteral",
-      "offset": 1667,
+      "offset": 1529,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
       "kind": "IntegerLiteral",
-      "offset": 2102,
+      "offset": 1964,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
       "kind": "BooleanLiteral",
-      "offset": 3328,
+      "offset": 3190,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
       "kind": "BooleanLiteral",
-      "offset": 3360,
+      "offset": 3222,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
       "kind": "IntegerLiteral",
-      "offset": 3389,
+      "offset": 3251,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
       "kind": "IntegerLiteral",
-      "offset": 3414,
+      "offset": 3276,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
       "kind": "BooleanLiteral",
-      "offset": 3437,
+      "offset": 3299,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
       "kind": "IntegerLiteral",
-      "offset": 3507,
+      "offset": 3369,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
       "kind": "IntegerLiteral",
-      "offset": 3638,
+      "offset": 3500,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
       "kind": "BooleanLiteral",
-      "offset": 3678,
+      "offset": 3540,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
       "kind": "IntegerLiteral",
-      "offset": 3715,
+      "offset": 3577,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
       "kind": "IntegerLiteral",
-      "offset": 3798,
+      "offset": 3660,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
       "kind": "IntegerLiteral",
-      "offset": 3834,
+      "offset": 3696,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
       "kind": "IntegerLiteral",
-      "offset": 3873,
+      "offset": 3735,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
       "kind": "BooleanLiteral",
-      "offset": 3924,
+      "offset": 3786,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
       "kind": "BooleanLiteral",
-      "offset": 4016,
-      "length": 5,
-      "value": "false"
+      "offset": 3878,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
       "kind": "IntegerLiteral",
-      "offset": 4444,
+      "offset": 4305,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
       "kind": "IntegerLiteral",
-      "offset": 5007,
+      "offset": 4868,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
       "kind": "BooleanLiteral",
-      "offset": 5125,
+      "offset": 4986,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
       "kind": "BooleanLiteral",
-      "offset": 5280,
+      "offset": 5092,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
       "kind": "StringLiteral",
-      "offset": 743,
+      "offset": 667,
       "length": 9,
       "value": "\"CubiCapture.CCCapture\""
     },
