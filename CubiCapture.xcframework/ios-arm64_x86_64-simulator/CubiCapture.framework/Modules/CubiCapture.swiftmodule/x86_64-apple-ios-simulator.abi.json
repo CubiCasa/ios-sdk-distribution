@@ -603,6 +603,13 @@
       },
       {
         "kind": "Import",
+        "name": "CoreMotion",
+        "printedName": "CoreMotion",
+        "declKind": "Import",
+        "moduleName": "CubiCapture"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -1957,8 +1964,7 @@
         "declKind": "Import",
         "moduleName": "CubiCapture",
         "declAttributes": [
-          "ImplementationOnly",
-          "RawDocComment"
+          "AccessControl"
         ]
       },
       {
@@ -4549,8 +4555,8 @@
           },
           {
             "kind": "Var",
-            "name": "fastRotation",
-            "printedName": "fastRotation",
+            "name": "fastTurning",
+            "printedName": "fastTurning",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -4580,8 +4586,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:11CubiCapture0aB9EventTypeO12fastRotationyA2CmF",
-            "mangledName": "$s11CubiCapture0aB9EventTypeO12fastRotationyA2CmF",
+            "usr": "s:11CubiCapture0aB9EventTypeO11fastTurningyA2CmF",
+            "mangledName": "$s11CubiCapture0aB9EventTypeO11fastTurningyA2CmF",
             "moduleName": "CubiCapture"
           },
           {
@@ -8601,8 +8607,7 @@
         "declKind": "Import",
         "moduleName": "CubiCapture",
         "declAttributes": [
-          "ImplementationOnly",
-          "RawDocComment"
+          "AccessControl"
         ]
       },
       {
@@ -9349,6 +9354,101 @@
             "mangledName": "$ss8SendableP"
           }
         ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CMDeviceMotion",
+        "printedName": "CMDeviceMotion",
+        "declKind": "Class",
+        "usr": "c:objc(cs)CMDeviceMotion",
+        "moduleName": "CoreMotion",
+        "isOpen": true,
+        "intro_iOS": "4.0",
+        "objc_name": "CMDeviceMotion",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)CMLogItem",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "CoreMotion.CMLogItem",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
       }
     ],
     "json_format_version": 8
@@ -9405,241 +9505,192 @@
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/ScanSettings.swift",
-      "kind": "FloatLiteral",
-      "offset": 816,
-      "length": 3,
-      "value": "0.4"
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/ScanSettings.swift",
-      "kind": "FloatLiteral",
-      "offset": 896,
-      "length": 3,
-      "value": "5.0"
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/ScanSettings.swift",
-      "kind": "FloatLiteral",
-      "offset": 990,
-      "length": 3,
-      "value": "0.3"
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/ScanSettings.swift",
-      "kind": "FloatLiteral",
-      "offset": 1090,
-      "length": 3,
-      "value": "0.4"
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/ScanSettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 1207,
+      "offset": 816,
       "length": 3,
       "value": "-45"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/ScanSettings.swift",
       "kind": "FloatLiteral",
-      "offset": 1224,
+      "offset": 833,
       "length": 5,
       "value": "180.0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/ScanSettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 1313,
+      "offset": 922,
       "length": 2,
       "value": "-5"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/ScanSettings.swift",
       "kind": "FloatLiteral",
-      "offset": 1329,
+      "offset": 938,
       "length": 5,
       "value": "180.0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/ScanSettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 1414,
+      "offset": 1023,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/ScanSettings.swift",
       "kind": "FloatLiteral",
-      "offset": 1508,
+      "offset": 1117,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/ScanSettings.swift",
       "kind": "FloatLiteral",
-      "offset": 1603,
+      "offset": 1217,
       "length": 3,
       "value": "1.5"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/ScanSettings.swift",
       "kind": "FloatLiteral",
-      "offset": 1684,
+      "offset": 1303,
       "length": 3,
       "value": "0.9"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/ScanSettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 1736,
+      "offset": 1355,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/ScanSettings.swift",
       "kind": "FloatLiteral",
-      "offset": 1796,
+      "offset": 1415,
       "length": 3,
       "value": "3.0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/ScanSettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 1844,
+      "offset": 1463,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/ScanSettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 1896,
+      "offset": 1515,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/ScanSettings.swift",
       "kind": "FloatLiteral",
-      "offset": 1939,
+      "offset": 1558,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/ScanSettings.swift",
       "kind": "FloatLiteral",
-      "offset": 1958,
+      "offset": 1577,
       "length": 5,
       "value": "180.0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/ScanSettings.swift",
       "kind": "FloatLiteral",
-      "offset": 2004,
+      "offset": 1623,
       "length": 5,
       "value": "170.0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/ScanSettings.swift",
       "kind": "FloatLiteral",
-      "offset": 2024,
+      "offset": 1643,
       "length": 5,
       "value": "180.0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/ScanSettings.swift",
       "kind": "FloatLiteral",
-      "offset": 2088,
+      "offset": 1706,
       "length": 3,
       "value": "4.0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/ScanSettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 2143,
+      "offset": 1760,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/ScanSettings.swift",
       "kind": "FloatLiteral",
-      "offset": 2305,
+      "offset": 1921,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/ScanSettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 2354,
+      "offset": 1970,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/ScanSettings.swift",
       "kind": "FloatLiteral",
-      "offset": 2405,
+      "offset": 2021,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/ScanSettings.swift",
       "kind": "FloatLiteral",
-      "offset": 2457,
+      "offset": 2073,
       "length": 4,
       "value": "4.50"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/ScanSettings.swift",
       "kind": "FloatLiteral",
-      "offset": 2512,
+      "offset": 2128,
       "length": 4,
       "value": "0.40"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/ScanSettings.swift",
       "kind": "FloatLiteral",
-      "offset": 2655,
+      "offset": 2271,
       "length": 3,
       "value": "1.2"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/ScanSettings.swift",
       "kind": "FloatLiteral",
-      "offset": 2753,
+      "offset": 2369,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/ScanSettings.swift",
       "kind": "IntegerLiteral",
-      "offset": 2873,
+      "offset": 2489,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/ScanSettings.swift",
       "kind": "FloatLiteral",
-      "offset": 2980,
+      "offset": 2596,
       "length": 3,
       "value": "1.5"
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/Detectors\/DriftDetection.swift",
-      "kind": "FloatLiteral",
-      "offset": 776,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/Detectors\/DriftDetection.swift",
-      "kind": "FloatLiteral",
-      "offset": 782,
-      "length": 4,
-      "value": "10.0"
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/Detectors\/DriftDetection.swift",
-      "kind": "BooleanLiteral",
-      "offset": 838,
-      "length": 4,
-      "value": "true"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/Utilities\/Extensions\/UIView+asyncanimations.swift",
@@ -9728,21 +9779,21 @@
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/WorldMapHelper.swift",
       "kind": "StringLiteral",
-      "offset": 345,
+      "offset": 363,
       "length": 16,
       "value": "\"ARWorldMap.bin\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/WorldMapHelper.swift",
       "kind": "StringLiteral",
-      "offset": 410,
+      "offset": 428,
       "length": 16,
       "value": "\"ARWorldMap.jpg\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/WorldMapHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 594,
+      "offset": 612,
       "length": 5,
       "value": "false"
     },
@@ -9908,20 +9959,6 @@
       "value": "\"Lalaland\""
     },
     {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/MotionDataHelper.swift",
-      "kind": "FloatLiteral",
-      "offset": 499,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/MotionDataHelper.swift",
-      "kind": "FloatLiteral",
-      "offset": 505,
-      "length": 4,
-      "value": "10.0"
-    },
-    {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/SceneDepth\/SceneDepthWriter.swift",
       "kind": "StringLiteral",
       "offset": 502,
@@ -10034,16 +10071,16 @@
       "value": "\"Mesh.scn\""
     },
     {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/Detectors\/RotationDetection.swift",
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/Detectors\/InvalidOrientationDetection.swift",
       "kind": "IntegerLiteral",
-      "offset": 536,
+      "offset": 556,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/Detectors\/RotationDetection.swift",
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/Detectors\/InvalidOrientationDetection.swift",
       "kind": "IntegerLiteral",
-      "offset": 577,
+      "offset": 600,
       "length": 1,
       "value": "0"
     },
@@ -10610,245 +10647,245 @@
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 1915,
+      "offset": 1914,
       "length": 2,
       "value": "87"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 1941,
+      "offset": 1940,
       "length": 2,
       "value": "88"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 1974,
+      "offset": 1973,
       "length": 2,
       "value": "90"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2007,
+      "offset": 2006,
       "length": 3,
       "value": "106"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2035,
+      "offset": 2034,
       "length": 3,
       "value": "107"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2062,
+      "offset": 2061,
       "length": 3,
       "value": "110"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2096,
+      "offset": 2095,
       "length": 3,
       "value": "112"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2131,
+      "offset": 2130,
       "length": 3,
       "value": "113"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2167,
+      "offset": 2166,
       "length": 3,
       "value": "115"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2201,
+      "offset": 2200,
       "length": 3,
       "value": "120"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2240,
+      "offset": 2239,
       "length": 3,
       "value": "126"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2279,
+      "offset": 2278,
       "length": 3,
       "value": "127"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2332,
+      "offset": 2331,
       "length": 3,
       "value": "128"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2368,
+      "offset": 2367,
       "length": 3,
       "value": "129"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2405,
+      "offset": 2404,
       "length": 3,
       "value": "130"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2444,
+      "offset": 2443,
       "length": 3,
       "value": "131"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2486,
+      "offset": 2485,
       "length": 3,
       "value": "132"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2522,
+      "offset": 2521,
       "length": 3,
       "value": "133"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2558,
+      "offset": 2557,
       "length": 3,
       "value": "134"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2600,
+      "offset": 2599,
       "length": 3,
       "value": "135"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2634,
+      "offset": 2633,
       "length": 3,
       "value": "136"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2673,
+      "offset": 2672,
       "length": 3,
       "value": "137"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2710,
+      "offset": 2709,
       "length": 3,
       "value": "138"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2749,
+      "offset": 2748,
       "length": 3,
       "value": "140"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2787,
+      "offset": 2786,
       "length": 3,
       "value": "141"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2827,
+      "offset": 2826,
       "length": 3,
       "value": "142"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2870,
+      "offset": 2869,
       "length": 3,
       "value": "143"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2906,
+      "offset": 2905,
       "length": 3,
       "value": "144"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2945,
+      "offset": 2944,
       "length": 3,
       "value": "150"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2988,
+      "offset": 2987,
       "length": 3,
       "value": "151"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 3024,
+      "offset": 3023,
       "length": 3,
       "value": "152"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 3059,
+      "offset": 3058,
       "length": 3,
       "value": "155"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 3091,
+      "offset": 3090,
       "length": 3,
       "value": "156"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 3119,
+      "offset": 3118,
       "length": 3,
       "value": "160"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 3156,
+      "offset": 3155,
       "length": 3,
       "value": "161"
     },
@@ -11009,7 +11046,7 @@
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture+ARSessionDelegate.swift",
       "kind": "BooleanLiteral",
-      "offset": 7892,
+      "offset": 7986,
       "length": 5,
       "value": "false"
     },
@@ -13319,21 +13356,21 @@
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/ScanningViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 10999,
+      "offset": 11080,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/ScanningViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 11045,
+      "offset": 11126,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/ScanningViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 11084,
+      "offset": 11165,
       "length": 1,
       "value": "0"
     },
@@ -13387,9 +13424,9 @@
       "value": "1"
     },
     {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/Detectors\/FastMovementDetection.swift",
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/Detectors\/FastTurningDetection.swift",
       "kind": "IntegerLiteral",
-      "offset": 557,
+      "offset": 508,
       "length": 1,
       "value": "0"
     },
@@ -13451,8 +13488,15 @@
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/Video\/VideoWritingHelper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 912,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/Video\/VideoWritingHelper.swift",
       "kind": "Array",
-      "offset": 948,
+      "offset": 1059,
       "length": 2,
       "value": "[]"
     },
@@ -13466,7 +13510,7 @@
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/Zip\/ZIPFoundationZipper.swift",
       "kind": "IntegerLiteral",
-      "offset": 421,
+      "offset": 358,
       "length": 1,
       "value": "0"
     },
@@ -13480,14 +13524,14 @@
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
       "kind": "StringLiteral",
-      "offset": 3233,
+      "offset": 3276,
       "length": 9,
       "value": "\"default\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
       "kind": "BooleanLiteral",
-      "offset": 3371,
+      "offset": 3414,
       "length": 5,
       "value": "false"
     },
@@ -13718,42 +13762,42 @@
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/FeedbackGatherer.swift",
       "kind": "StringLiteral",
-      "offset": 669,
+      "offset": 674,
       "length": 19,
       "value": "\"WRONG_ORIENTATION\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/FeedbackGatherer.swift",
       "kind": "StringLiteral",
-      "offset": 723,
+      "offset": 728,
       "length": 21,
       "value": "\"HORIZONTAL_SCANNING\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/FeedbackGatherer.swift",
       "kind": "StringLiteral",
-      "offset": 773,
+      "offset": 777,
       "length": 15,
       "value": "\"FAST_ROTATION\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/FeedbackGatherer.swift",
       "kind": "StringLiteral",
-      "offset": 813,
+      "offset": 817,
       "length": 11,
       "value": "\"TOO_CLOSE\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/FeedbackGatherer.swift",
       "kind": "StringLiteral",
-      "offset": 1488,
+      "offset": 1491,
       "length": 15,
       "value": "\"feedback.json\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/FeedbackGatherer.swift",
       "kind": "IntegerLiteral",
-      "offset": 1529,
+      "offset": 1532,
       "length": 1,
       "value": "0"
     },
