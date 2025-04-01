@@ -6,6 +6,16 @@
     "children": [
       {
         "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "CubiCapture",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -90,7 +100,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(accent:text:buttonText:background:warning:warningBorder:info:infoBorder:record:)",
+            "printedName": "init(accent:text:buttonText:background:guideBackground:warning:warningBorder:info:infoBorder:record:positive:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -130,6 +140,12 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Color",
+                "printedName": "SwiftUI.Color",
+                "usr": "s:7SwiftUI5ColorV"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "Array",
                 "printedName": "[SwiftUI.Color]",
                 "children": [
@@ -161,6 +177,12 @@
                   }
                 ],
                 "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Color",
+                "printedName": "SwiftUI.Color",
+                "usr": "s:7SwiftUI5ColorV"
               },
               {
                 "kind": "TypeNominal",
@@ -170,8 +192,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:11CubiCapture8ColorSetC6accent4text10buttonText10background7warning0J6Border4info0lK06recordAC7SwiftUI0C0V_A4OSayAOGAopOtcfc",
-            "mangledName": "$s11CubiCapture8ColorSetC6accent4text10buttonText10background7warning0J6Border4info0lK06recordAC7SwiftUI0C0V_A4OSayAOGAopOtcfc",
+            "usr": "s:11CubiCapture8ColorSetC6accent4text10buttonText10background15guideBackground7warning0L6Border4info0nM06record8positiveAC7SwiftUI0C0V_A5QSayAQGAqr2Qtcfc",
+            "mangledName": "$s11CubiCapture8ColorSetC6accent4text10buttonText10background15guideBackground7warning0L6Border4info0nM06record8positiveAC7SwiftUI0C0V_A5QSayAQGAqr2Qtcfc",
             "moduleName": "CubiCapture",
             "declAttributes": [
               "AccessControl"
@@ -454,7 +476,7 @@
           {
             "kind": "Function",
             "name": "didAbortScan",
-            "printedName": "didAbortScan(withEvent:)",
+            "printedName": "didAbortScan(withEvent:canContinue:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -466,11 +488,17 @@
                 "name": "CubiCaptureEvent",
                 "printedName": "CubiCapture.CubiCaptureEvent",
                 "usr": "s:11CubiCapture0aB5EventV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:11CubiCapture0aB8DelegateP12didAbortScan9withEventyAA0abH0V_tF",
-            "mangledName": "$s11CubiCapture0aB8DelegateP12didAbortScan9withEventyAA0abH0V_tF",
+            "usr": "s:11CubiCapture0aB8DelegateP12didAbortScan9withEvent11canContinueyAA0abH0V_SbtF",
+            "mangledName": "$s11CubiCapture0aB8DelegateP12didAbortScan9withEvent11canContinueyAA0abH0V_SbtF",
             "moduleName": "CubiCapture",
             "genericSig": "<τ_0_0 where τ_0_0 : CubiCapture.CubiCaptureDelegate>",
             "sugared_genericSig": "<Self where Self : CubiCapture.CubiCaptureDelegate>",
@@ -599,7 +627,10 @@
         "name": "ARKit",
         "printedName": "ARKit",
         "declKind": "Import",
-        "moduleName": "CubiCapture"
+        "moduleName": "CubiCapture",
+        "declAttributes": [
+          "Preconcurrency"
+        ]
       },
       {
         "kind": "Import",
@@ -620,8 +651,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "CubiCapture",
         "declAttributes": [
@@ -630,8 +661,8 @@
       },
       {
         "kind": "Import",
-        "name": "ARKit",
-        "printedName": "ARKit",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "CubiCapture",
         "declAttributes": [
@@ -950,6 +981,35 @@
             "isFromExtension": true,
             "throwing": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ScanningFeatures",
+                "printedName": "CubiCapture.ScanningFeatures",
+                "usr": "s:11CubiCapture16ScanningFeaturesV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11CubiCapture16ScanningFeaturesV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s11CubiCapture16ScanningFeaturesV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "CubiCapture",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "init_kind": "Designated"
           }
         ],
         "declKind": "Struct",
@@ -1105,6 +1165,13 @@
             ],
             "usr": "s:s25ExpressibleByArrayLiteralP",
             "mangledName": "$ss25ExpressibleByArrayLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
           },
           {
             "kind": "Conformance",
@@ -1561,7 +1628,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(delegate:fileName:address:propertyType:usesRawDepth:options:colorSet:)",
+            "printedName": "init(delegate:fileName:shouldContinueScan:address:propertyType:usesRawDepth:options:colorSet:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1588,6 +1655,13 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               },
               {
                 "kind": "TypeNominal",
@@ -1632,8 +1706,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:11CubiCapture0aB4ViewV8delegate8fileName7address12propertyType12usesRawDepth7options8colorSetAcA0aB8Delegate_pSg_SSAA0aB7AddressVSgAA0ab8PropertyI0OSbAA0B7OptionsVAA05ColorO0Ctcfc",
-            "mangledName": "$s11CubiCapture0aB4ViewV8delegate8fileName7address12propertyType12usesRawDepth7options8colorSetAcA0aB8Delegate_pSg_SSAA0aB7AddressVSgAA0ab8PropertyI0OSbAA0B7OptionsVAA05ColorO0Ctcfc",
+            "usr": "s:11CubiCapture0aB4ViewV8delegate8fileName18shouldContinueScan7address12propertyType12usesRawDepth7options8colorSetAcA0aB8Delegate_pSg_SSSbAA0aB7AddressVSgAA0ab8PropertyL0OSbAA0B7OptionsVAA05ColorR0Ctcfc",
+            "mangledName": "$s11CubiCapture0aB4ViewV8delegate8fileName18shouldContinueScan7address12propertyType12usesRawDepth7options8colorSetAcA0aB8Delegate_pSg_SSSbAA0aB7AddressVSgAA0ab8PropertyL0OSbAA0B7OptionsVAA05ColorR0Ctcfc",
             "moduleName": "CubiCapture",
             "declAttributes": [
               "Custom",
@@ -1922,6 +1996,26 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CubiCapture",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "CubiCapture",
+        "declAttributes": [
+          "Preconcurrency"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -1945,26 +2039,6 @@
         "moduleName": "CubiCapture",
         "declAttributes": [
           "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "CubiCapture",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Zip",
-        "printedName": "Zip",
-        "declKind": "Import",
-        "moduleName": "CubiCapture",
-        "declAttributes": [
-          "AccessControl"
         ]
       },
       {
@@ -2576,7 +2650,10 @@
         "name": "ARKit",
         "printedName": "ARKit",
         "declKind": "Import",
-        "moduleName": "CubiCapture"
+        "moduleName": "CubiCapture",
+        "declAttributes": [
+          "Preconcurrency"
+        ]
       },
       {
         "kind": "Import",
@@ -4851,6 +4928,43 @@
           },
           {
             "kind": "Var",
+            "name": "photoMoveFailed",
+            "printedName": "photoMoveFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CubiCapture.CubiCaptureEventType.Type) -> CubiCapture.CubiCaptureEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CubiCaptureEventType",
+                    "printedName": "CubiCapture.CubiCaptureEventType",
+                    "usr": "s:11CubiCapture0aB9EventTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CubiCapture.CubiCaptureEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CubiCaptureEventType",
+                        "printedName": "CubiCapture.CubiCaptureEventType",
+                        "usr": "s:11CubiCapture0aB9EventTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CubiCapture0aB9EventTypeO15photoMoveFailedyA2CmF",
+            "mangledName": "$s11CubiCapture0aB9EventTypeO15photoMoveFailedyA2CmF",
+            "moduleName": "CubiCapture"
+          },
+          {
+            "kind": "Var",
             "name": "sceneMeshWriteFailed",
             "printedName": "sceneMeshWriteFailed",
             "children": [
@@ -5849,6 +5963,83 @@
             "moduleName": "CubiCapture"
           },
           {
+            "kind": "Var",
+            "name": "readArkitDataFailed",
+            "printedName": "readArkitDataFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CubiCapture.CubiCaptureEventType.Type) -> CubiCapture.CubiCaptureEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CubiCaptureEventType",
+                    "printedName": "CubiCapture.CubiCaptureEventType",
+                    "usr": "s:11CubiCapture0aB9EventTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CubiCapture.CubiCaptureEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CubiCaptureEventType",
+                        "printedName": "CubiCapture.CubiCaptureEventType",
+                        "usr": "s:11CubiCapture0aB9EventTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CubiCapture0aB9EventTypeO19readArkitDataFailedyA2CmF",
+            "mangledName": "$s11CubiCapture0aB9EventTypeO19readArkitDataFailedyA2CmF",
+            "moduleName": "CubiCapture"
+          },
+          {
+            "kind": "Var",
+            "name": "arSessionError",
+            "printedName": "arSessionError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CubiCapture.CubiCaptureEventType.Type) -> CubiCapture.CubiCaptureEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CubiCaptureEventType",
+                    "printedName": "CubiCapture.CubiCaptureEventType",
+                    "usr": "s:11CubiCapture0aB9EventTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CubiCapture.CubiCaptureEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CubiCaptureEventType",
+                        "printedName": "CubiCapture.CubiCaptureEventType",
+                        "usr": "s:11CubiCapture0aB9EventTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11CubiCapture0aB9EventTypeO14arSessionErroryA2CmF",
+            "mangledName": "$s11CubiCapture0aB9EventTypeO14arSessionErroryA2CmF",
+            "moduleName": "CubiCapture",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -6027,6 +6218,16 @@
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "CubiCapture",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -6937,22 +7138,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.URL?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "URL",
-                    "printedName": "Foundation.URL",
-                    "usr": "s:10Foundation3URLV"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
               }
             ],
             "declKind": "Func",
-            "usr": "s:11CubiCapture12ZipUtilitiesC14capturedPhotos2atSay10Foundation3URLVGAHSg_tFZ",
-            "mangledName": "$s11CubiCapture12ZipUtilitiesC14capturedPhotos2atSay10Foundation3URLVGAHSg_tFZ",
+            "usr": "s:11CubiCapture12ZipUtilitiesC14capturedPhotos2atSay10Foundation3URLVGAH_tFZ",
+            "mangledName": "$s11CubiCapture12ZipUtilitiesC14capturedPhotos2atSay10Foundation3URLVGAH_tFZ",
             "moduleName": "CubiCapture",
             "static": true,
             "declAttributes": [
@@ -7930,6 +8123,53 @@
           },
           {
             "kind": "Var",
+            "name": "autosave",
+            "printedName": "autosave",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CaptureOptions",
+                "printedName": "CubiCapture.CaptureOptions",
+                "usr": "s:11CubiCapture0B7OptionsV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11CubiCapture0B7OptionsV8autosaveACvpZ",
+            "mangledName": "$s11CubiCapture0B7OptionsV8autosaveACvpZ",
+            "moduleName": "CubiCapture",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CaptureOptions",
+                    "printedName": "CubiCapture.CaptureOptions",
+                    "usr": "s:11CubiCapture0B7OptionsV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11CubiCapture0B7OptionsV8autosaveACvgZ",
+                "mangledName": "$s11CubiCapture0B7OptionsV8autosaveACvgZ",
+                "moduleName": "CubiCapture",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "allCases",
             "printedName": "allCases",
             "children": [
@@ -8065,6 +8305,35 @@
             "isFromExtension": true,
             "throwing": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CaptureOptions",
+                "printedName": "CubiCapture.CaptureOptions",
+                "usr": "s:11CubiCapture0B7OptionsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11CubiCapture0B7OptionsV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s11CubiCapture0B7OptionsV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "CubiCapture",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "init_kind": "Designated"
           }
         ],
         "declKind": "Struct",
@@ -8221,6 +8490,13 @@
             ],
             "usr": "s:s25ExpressibleByArrayLiteralP",
             "mangledName": "$ss25ExpressibleByArrayLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
           },
           {
             "kind": "Conformance",
@@ -8509,6 +8785,35 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Function",
+            "name": "canContinueScan",
+            "printedName": "canContinueScan(fileName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CubiCapture0aB4InfoC15canContinueScan8fileNameSbSS_tFZ",
+            "mangledName": "$s11CubiCapture0aB4InfoC15canContinueScan8fileNameSbSS_tFZ",
+            "moduleName": "CubiCapture",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -9455,6 +9760,13 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Elements\/Buttons.swift",
+      "kind": "BooleanLiteral",
+      "offset": 219,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/FinalizeScanView.swift",
       "kind": "FloatLiteral",
       "offset": 1394,
@@ -9693,6 +10005,13 @@
       "value": "1.5"
     },
     {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/ColorSet.swift",
+      "kind": "FloatLiteral",
+      "offset": 1661,
+      "length": 4,
+      "value": "0.88"
+    },
+    {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/Utilities\/Extensions\/UIView+asyncanimations.swift",
       "kind": "Array",
       "offset": 590,
@@ -9723,28 +10042,42 @@
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/FrameCountHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 737,
+      "offset": 820,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/FrameCountHelper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 954,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/FrameCountHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 891,
+      "offset": 1002,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/FrameCountHelper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1156,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/FrameCountHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 1167,
+      "offset": 1440,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/FrameCountHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 1326,
+      "offset": 1599,
       "length": 1,
       "value": "0"
     },
@@ -9777,25 +10110,39 @@
       "value": "[]"
     },
     {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Guides\/GuideManager.swift",
+      "kind": "Dictionary",
+      "offset": 700,
+      "length": 3,
+      "value": "[]"
+    },
+    {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/WorldMapHelper.swift",
       "kind": "StringLiteral",
-      "offset": 363,
+      "offset": 379,
       "length": 16,
       "value": "\"ARWorldMap.bin\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/WorldMapHelper.swift",
       "kind": "StringLiteral",
-      "offset": 428,
+      "offset": 444,
       "length": 16,
       "value": "\"ARWorldMap.jpg\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/WorldMapHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 612,
+      "offset": 735,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/WorldMapHelper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5402,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/ConfigJSONHelper.swift",
@@ -9805,16 +10152,86 @@
       "value": "\"config.json\""
     },
     {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/SceneReconstruction\/Plane.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4058,
-      "length": 4,
-      "value": "true"
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/FullScreenGuide.swift",
+      "kind": "FloatLiteral",
+      "offset": 329,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/FullScreenGuide.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3379,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/FullScreenGuide.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3385,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/FullScreenGuide.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3429,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/FullScreenGuide.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3436,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/FullScreenGuide.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3481,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/FullScreenGuide.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3487,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/FullScreenGuide.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3534,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/FullScreenGuide.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3541,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/FullScreenGuide.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3589,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/FullScreenGuide.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3595,
+      "length": 1,
+      "value": "1"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/FullScreenGuide.swift",
       "kind": "StringLiteral",
-      "offset": 2611,
+      "offset": 4373,
       "length": 6,
       "value": "\"allo\""
     },
@@ -9835,224 +10252,259 @@
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/PhotoCapturer.swift",
       "kind": "IntegerLiteral",
-      "offset": 1040,
+      "offset": 992,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/PhotoCapturer.swift",
       "kind": "IntegerLiteral",
-      "offset": 1065,
+      "offset": 1017,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/PhotoCapturer.swift",
       "kind": "BooleanLiteral",
-      "offset": 1120,
+      "offset": 1072,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/PhotoCapturer.swift",
       "kind": "BooleanLiteral",
-      "offset": 1149,
+      "offset": 1101,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/PhotoCapturer.swift",
       "kind": "StringLiteral",
-      "offset": 1180,
+      "offset": 1132,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/PhotoCapturer.swift",
       "kind": "StringLiteral",
-      "offset": 1388,
+      "offset": 1340,
       "length": 5,
       "value": "\"jpg\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/PhotoCapturer.swift",
       "kind": "StringLiteral",
-      "offset": 1457,
+      "offset": 1409,
       "length": 21,
       "value": "\"photo_capturer.json\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/PhotoCapturer.swift",
-      "kind": "StringLiteral",
-      "offset": 1556,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/PhotoCapturer.swift",
       "kind": "Array",
-      "offset": 1694,
+      "offset": 1549,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/PhotoCapturer.swift",
       "kind": "IntegerLiteral",
-      "offset": 1878,
+      "offset": 1735,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/PhotoCapturer.swift",
       "kind": "Array",
-      "offset": 1933,
+      "offset": 1790,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/PhotoCapturer.swift",
       "kind": "Array",
-      "offset": 1979,
+      "offset": 1836,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/PhotoCapturer.swift",
       "kind": "StringLiteral",
-      "offset": 8693,
+      "offset": 7208,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureView.swift",
       "kind": "BooleanLiteral",
-      "offset": 600,
+      "offset": 505,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 650,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureView.swift",
       "kind": "StringLiteral",
-      "offset": 1539,
+      "offset": 1716,
       "length": 5,
       "value": "\"meh\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureView.swift",
       "kind": "StringLiteral",
-      "offset": 1590,
+      "offset": 1767,
       "length": 9,
       "value": "\"Main St\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureView.swift",
       "kind": "StringLiteral",
-      "offset": 1607,
+      "offset": 1784,
       "length": 9,
       "value": "\"Anytown\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureView.swift",
       "kind": "StringLiteral",
-      "offset": 1627,
+      "offset": 1804,
       "length": 10,
       "value": "\"Lalaland\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/SceneDepth\/SceneDepthWriter.swift",
       "kind": "StringLiteral",
-      "offset": 502,
+      "offset": 527,
       "length": 20,
       "value": "\"allDepthFrames.bin\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/SceneDepth\/SceneDepthWriter.swift",
       "kind": "IntegerLiteral",
-      "offset": 557,
+      "offset": 582,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/SceneDepth\/SceneDepthWriter.swift",
       "kind": "Array",
-      "offset": 732,
+      "offset": 752,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/SceneDepth\/SceneDepthWriter.swift",
       "kind": "BooleanLiteral",
-      "offset": 823,
+      "offset": 843,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/TrackingInfo.swift",
       "kind": "StringLiteral",
-      "offset": 238,
+      "offset": 236,
       "length": 18,
       "value": "\"EXCESSIVE_MOTION\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/TrackingInfo.swift",
       "kind": "StringLiteral",
-      "offset": 289,
+      "offset": 287,
       "length": 23,
       "value": "\"INSUFFICIENT_FEATURES\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/TrackingInfo.swift",
       "kind": "StringLiteral",
-      "offset": 342,
+      "offset": 340,
       "length": 20,
       "value": "\"INSUFFICIENT_LIGHT\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/TrackingInfo.swift",
       "kind": "StringLiteral",
-      "offset": 390,
+      "offset": 385,
+      "length": 15,
+      "value": "\"NOT_AVAILABLE\""
+    },
+    {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/TrackingInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 428,
       "length": 18,
       "value": "\"START_RELOCATION\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/TrackingInfo.swift",
       "kind": "StringLiteral",
-      "offset": 430,
+      "offset": 468,
       "length": 11,
       "value": "\"RELOCATED\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/TrackingInfo.swift",
       "kind": "StringLiteral",
-      "offset": 461,
+      "offset": 499,
       "length": 9,
       "value": "\"DRIFTED\""
     },
     {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/TrackingInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 531,
+      "length": 12,
+      "value": "\"CONTINUING\""
+    },
+    {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/Video\/VideoWriter.swift",
       "kind": "IntegerLiteral",
-      "offset": 1003,
+      "offset": 1052,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/Video\/VideoWriter.swift",
+      "kind": "FloatLiteral",
+      "offset": 1343,
+      "length": 4,
+      "value": "10.0"
+    },
+    {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/Video\/VideoWriter.swift",
       "kind": "StringLiteral",
-      "offset": 1236,
+      "offset": 1473,
       "length": 11,
       "value": "\"video.m4v\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/Video\/VideoWriter.swift",
       "kind": "BooleanLiteral",
-      "offset": 1901,
-      "length": 4,
-      "value": "true"
+      "offset": 2138,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/Video\/VideoWriter.swift",
+      "kind": "StringLiteral",
+      "offset": 3297,
+      "length": 36,
+      "value": "\"Writer input became ready for data\""
+    },
+    {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/Video\/VideoWriter.swift",
+      "kind": "StringLiteral",
+      "offset": 3529,
+      "length": 40,
+      "value": "\"Writer input became NOT ready for data\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DataWriter.swift",
       "kind": "BooleanLiteral",
-      "offset": 945,
+      "offset": 974,
       "length": 5,
       "value": "false"
     },
@@ -10120,25 +10572,11 @@
       "value": "true"
     },
     {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Elements\/TopNotification.swift",
-      "kind": "StringLiteral",
-      "offset": 1816,
-      "length": 5,
-      "value": "\"moi\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Elements\/TopNotification.swift",
-      "kind": "StringLiteral",
-      "offset": 1844,
-      "length": 5,
-      "value": "\"moi\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Elements\/TopNotification.swift",
-      "kind": "StringLiteral",
-      "offset": 1873,
-      "length": 19,
-      "value": "\"fire-flame-curved\""
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Elements\/GuideNotification.swift",
+      "kind": "FloatLiteral",
+      "offset": 2893,
+      "length": 4,
+      "value": "16.0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/ARKitJSONHelper.swift",
@@ -10149,8 +10587,22 @@
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/ARKitJSONHelper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 488,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/ARKitJSONHelper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 524,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/ARKitJSONHelper.swift",
       "kind": "Array",
-      "offset": 8647,
+      "offset": 10359,
       "length": 169,
       "value": "[[0, -1, 0, 0], [1, 0, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]"
     },
@@ -10164,49 +10616,49 @@
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Elements\/PhotoPreviewCircle.swift",
       "kind": "StringLiteral",
-      "offset": 1735,
+      "offset": 1920,
       "length": 5,
       "value": "\"bla\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Elements\/PhotoPreviewCircle.swift",
       "kind": "StringLiteral",
-      "offset": 1825,
+      "offset": 2010,
       "length": 9,
       "value": "\"Main St\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Elements\/PhotoPreviewCircle.swift",
       "kind": "StringLiteral",
-      "offset": 1842,
+      "offset": 2027,
       "length": 9,
       "value": "\"Anytown\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Elements\/PhotoPreviewCircle.swift",
       "kind": "StringLiteral",
-      "offset": 1862,
+      "offset": 2047,
       "length": 10,
       "value": "\"Lalaland\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/SceneReconstruction\/MeshNode.swift",
       "kind": "BooleanLiteral",
-      "offset": 647,
+      "offset": 663,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/SceneReconstruction\/MeshNode.swift",
       "kind": "BooleanLiteral",
-      "offset": 2916,
+      "offset": 2811,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/SceneReconstruction\/MeshNode.swift",
       "kind": "BooleanLiteral",
-      "offset": 3304,
+      "offset": 3199,
       "length": 4,
       "value": "true"
     },
@@ -10227,7 +10679,7 @@
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Playback\/PlaybackUI.swift",
       "kind": "StringLiteral",
-      "offset": 5350,
+      "offset": 5302,
       "length": 8,
       "value": "\"blabla\""
     },
@@ -10290,91 +10742,56 @@
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/ARKitData.swift",
       "kind": "BooleanLiteral",
-      "offset": 291,
+      "offset": 289,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/ARKitData.swift",
-      "kind": "StringLiteral",
-      "offset": 428,
-      "length": 14,
-      "value": "\"CFBundleName\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/ARKitData.swift",
-      "kind": "StringLiteral",
-      "offset": 512,
-      "length": 28,
-      "value": "\"CFBundleShortVersionString\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/ARKitData.swift",
-      "kind": "StringLiteral",
-      "offset": 608,
-      "length": 17,
-      "value": "\"CFBundleVersion\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/ARKitData.swift",
-      "kind": "StringLiteral",
-      "offset": 784,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/ARKitData.swift",
-      "kind": "StringLiteral",
-      "offset": 814,
-      "length": 5,
-      "value": "\"iOS\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/ARKitData.swift",
       "kind": "IntegerLiteral",
-      "offset": 1153,
+      "offset": 834,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/ARKitData.swift",
       "kind": "StringLiteral",
-      "offset": 1292,
+      "offset": 973,
       "length": 10,
       "value": "\"portrait\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/ARKitData.swift",
       "kind": "StringLiteral",
-      "offset": 1355,
+      "offset": 1036,
       "length": 11,
       "value": "\"iOS-LiDAR\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/ARKitData.swift",
       "kind": "StringLiteral",
-      "offset": 1369,
+      "offset": 1050,
       "length": 5,
       "value": "\"iOS\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/ARKitData.swift",
       "kind": "IntegerLiteral",
-      "offset": 2450,
+      "offset": 4582,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/ARKitData.swift",
       "kind": "IntegerLiteral",
-      "offset": 2477,
+      "offset": 4609,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/ScanLog.swift",
       "kind": "StringLiteral",
-      "offset": 1296,
+      "offset": 1294,
       "length": 10,
       "value": "\"scan.log\""
     },
@@ -10703,191 +11120,219 @@
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2166,
+      "offset": 2161,
+      "length": 3,
+      "value": "114"
+    },
+    {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2197,
       "length": 3,
       "value": "115"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2200,
+      "offset": 2231,
       "length": 3,
       "value": "120"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2239,
+      "offset": 2270,
       "length": 3,
       "value": "126"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2278,
+      "offset": 2309,
       "length": 3,
       "value": "127"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2331,
+      "offset": 2362,
       "length": 3,
       "value": "128"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2367,
+      "offset": 2398,
       "length": 3,
       "value": "129"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2404,
+      "offset": 2435,
       "length": 3,
       "value": "130"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2443,
+      "offset": 2474,
       "length": 3,
       "value": "131"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2485,
+      "offset": 2516,
       "length": 3,
       "value": "132"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2521,
+      "offset": 2552,
       "length": 3,
       "value": "133"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2557,
+      "offset": 2588,
       "length": 3,
       "value": "134"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2599,
+      "offset": 2630,
       "length": 3,
       "value": "135"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2633,
+      "offset": 2664,
       "length": 3,
       "value": "136"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2672,
+      "offset": 2703,
       "length": 3,
       "value": "137"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2709,
+      "offset": 2740,
       "length": 3,
       "value": "138"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2748,
+      "offset": 2779,
       "length": 3,
       "value": "140"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2786,
+      "offset": 2817,
       "length": 3,
       "value": "141"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2826,
+      "offset": 2857,
       "length": 3,
       "value": "142"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2869,
+      "offset": 2900,
       "length": 3,
       "value": "143"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2905,
+      "offset": 2936,
       "length": 3,
       "value": "144"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2944,
+      "offset": 2975,
       "length": 3,
       "value": "150"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2987,
+      "offset": 3018,
       "length": 3,
       "value": "151"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 3023,
+      "offset": 3054,
       "length": 3,
       "value": "152"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 3058,
+      "offset": 3089,
       "length": 3,
       "value": "155"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 3090,
+      "offset": 3121,
       "length": 3,
       "value": "156"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 3118,
+      "offset": 3149,
       "length": 3,
       "value": "160"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 3155,
+      "offset": 3186,
       "length": 3,
       "value": "161"
+    },
+    {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3222,
+      "length": 3,
+      "value": "170"
+    },
+    {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiCaptureEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3322,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Elements\/CornerLines.swift",
+      "kind": "FloatLiteral",
+      "offset": 219,
+      "length": 3,
+      "value": "0.0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/TorchHelper.swift",
@@ -10943,14 +11388,14 @@
       "kind": "FloatLiteral",
       "offset": 241,
       "length": 4,
-      "value": "48.0"
+      "value": "56.0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Elements\/CircleImage.swift",
       "kind": "FloatLiteral",
       "offset": 272,
       "length": 4,
-      "value": "48.0"
+      "value": "56.0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CubiPlaybackView.swift",
@@ -11046,7 +11491,7 @@
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture+ARSessionDelegate.swift",
       "kind": "BooleanLiteral",
-      "offset": 7986,
+      "offset": 11389,
       "length": 5,
       "value": "false"
     },
@@ -11059,2138 +11504,416 @@
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 601,
-      "length": 9,
-      "value": "\"iPod5,1\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 652,
-      "length": 29,
-      "value": "\"iPod touch (5th generation)\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 699,
-      "length": 9,
-      "value": "\"iPod7,1\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 750,
-      "length": 29,
-      "value": "\"iPod touch (6th generation)\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 797,
-      "length": 9,
-      "value": "\"iPod9,1\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 848,
-      "length": 29,
-      "value": "\"iPod touch (7th generation)\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 895,
-      "length": 11,
-      "value": "\"iPhone3,1\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 908,
-      "length": 11,
-      "value": "\"iPhone3,2\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 921,
-      "length": 11,
-      "value": "\"iPhone3,3\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 946,
-      "length": 10,
-      "value": "\"iPhone 4\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 974,
-      "length": 11,
-      "value": "\"iPhone4,1\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1025,
-      "length": 11,
-      "value": "\"iPhone 4s\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1054,
-      "length": 11,
-      "value": "\"iPhone5,1\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1067,
-      "length": 11,
-      "value": "\"iPhone5,2\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1105,
-      "length": 10,
-      "value": "\"iPhone 5\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1133,
-      "length": 11,
-      "value": "\"iPhone5,3\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1146,
-      "length": 11,
-      "value": "\"iPhone5,4\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1184,
-      "length": 11,
-      "value": "\"iPhone 5c\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1213,
-      "length": 11,
-      "value": "\"iPhone6,1\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1226,
-      "length": 11,
-      "value": "\"iPhone6,2\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1264,
-      "length": 11,
-      "value": "\"iPhone 5s\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1293,
-      "length": 11,
-      "value": "\"iPhone7,2\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1344,
-      "length": 10,
-      "value": "\"iPhone 6\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1372,
-      "length": 11,
-      "value": "\"iPhone7,1\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1423,
-      "length": 15,
-      "value": "\"iPhone 6 Plus\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1456,
-      "length": 11,
-      "value": "\"iPhone8,1\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1507,
-      "length": 11,
-      "value": "\"iPhone 6s\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1536,
-      "length": 11,
-      "value": "\"iPhone8,2\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1587,
-      "length": 16,
-      "value": "\"iPhone 6s Plus\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1621,
-      "length": 11,
-      "value": "\"iPhone8,4\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1672,
-      "length": 11,
-      "value": "\"iPhone SE\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1701,
-      "length": 11,
-      "value": "\"iPhone9,1\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1714,
-      "length": 11,
-      "value": "\"iPhone9,3\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1752,
-      "length": 10,
-      "value": "\"iPhone 7\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1780,
-      "length": 11,
-      "value": "\"iPhone9,2\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1793,
-      "length": 11,
-      "value": "\"iPhone9,4\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1831,
-      "length": 15,
-      "value": "\"iPhone 7 Plus\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1864,
-      "length": 12,
-      "value": "\"iPhone10,1\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1878,
-      "length": 12,
-      "value": "\"iPhone10,4\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1915,
-      "length": 10,
-      "value": "\"iPhone 8\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1943,
-      "length": 12,
-      "value": "\"iPhone10,2\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1957,
-      "length": 12,
-      "value": "\"iPhone10,5\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 1994,
-      "length": 15,
-      "value": "\"iPhone 8 Plus\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 2027,
-      "length": 12,
-      "value": "\"iPhone10,3\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 2041,
-      "length": 12,
-      "value": "\"iPhone10,6\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 2078,
-      "length": 10,
-      "value": "\"iPhone X\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 2106,
-      "length": 12,
-      "value": "\"iPhone11,2\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 2157,
-      "length": 11,
-      "value": "\"iPhone XS\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 2186,
-      "length": 12,
-      "value": "\"iPhone11,4\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 2200,
-      "length": 12,
-      "value": "\"iPhone11,6\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 2237,
-      "length": 15,
-      "value": "\"iPhone XS Max\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 2270,
-      "length": 12,
-      "value": "\"iPhone11,8\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 2321,
-      "length": 11,
-      "value": "\"iPhone XR\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 2350,
-      "length": 12,
-      "value": "\"iPhone12,1\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 2401,
-      "length": 11,
-      "value": "\"iPhone 11\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 2430,
-      "length": 12,
-      "value": "\"iPhone12,3\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 2481,
-      "length": 15,
-      "value": "\"iPhone 11 Pro\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 2514,
-      "length": 12,
-      "value": "\"iPhone12,5\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 2565,
-      "length": 19,
-      "value": "\"iPhone 11 Pro Max\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 2602,
-      "length": 12,
-      "value": "\"iPhone12,8\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 2653,
-      "length": 28,
-      "value": "\"iPhone SE (2nd generation)\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 2699,
-      "length": 12,
-      "value": "\"iPhone13,1\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 2750,
-      "length": 16,
-      "value": "\"iPhone 12 mini\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 2784,
-      "length": 12,
-      "value": "\"iPhone13,2\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 2835,
-      "length": 11,
-      "value": "\"iPhone 12\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 2864,
-      "length": 12,
-      "value": "\"iPhone13,3\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 2915,
-      "length": 15,
-      "value": "\"iPhone 12 Pro\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 2948,
-      "length": 12,
-      "value": "\"iPhone13,4\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 2999,
-      "length": 19,
-      "value": "\"iPhone 12 Pro Max\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 3036,
-      "length": 12,
-      "value": "\"iPhone14,2\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 3087,
-      "length": 15,
-      "value": "\"iPhone 13 Pro\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 3120,
-      "length": 12,
-      "value": "\"iPhone14,3\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 3171,
-      "length": 19,
-      "value": "\"iPhone 13 Pro Max\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 3208,
-      "length": 12,
-      "value": "\"iPhone14,4\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 3259,
-      "length": 16,
-      "value": "\"iPhone 13 Mini\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 3293,
-      "length": 12,
-      "value": "\"iPhone14,5\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 3344,
-      "length": 11,
-      "value": "\"iPhone 13\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 3373,
-      "length": 12,
-      "value": "\"iPhone14,6\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 3424,
-      "length": 19,
-      "value": "\"iPhone SE 3rd Gen\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 3461,
-      "length": 12,
-      "value": "\"iPhone14,7\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 3512,
-      "length": 11,
-      "value": "\"iPhone 14\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 3541,
-      "length": 12,
-      "value": "\"iPhone14,8\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 3592,
-      "length": 16,
-      "value": "\"iPhone 14 Plus\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 3626,
-      "length": 12,
-      "value": "\"iPhone15,2\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 3677,
-      "length": 15,
-      "value": "\"iPhone 14 Pro\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 3710,
-      "length": 12,
-      "value": "\"iPhone15,3\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 3761,
-      "length": 19,
-      "value": "\"iPhone 14 Pro Max\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 3798,
-      "length": 12,
-      "value": "\"iPhone15,4\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 3849,
-      "length": 11,
-      "value": "\"iPhone 15\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 3878,
-      "length": 12,
-      "value": "\"iPhone15,5\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 3929,
-      "length": 16,
-      "value": "\"iPhone 15 Plus\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 3963,
-      "length": 12,
-      "value": "\"iPhone16,1\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 4014,
-      "length": 15,
-      "value": "\"iPhone 15 Pro\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 4047,
-      "length": 12,
-      "value": "\"iPhone16,2\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 4098,
-      "length": 19,
-      "value": "\"iPhone 15 Pro Max\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 4135,
-      "length": 12,
-      "value": "\"iPhone17,3\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 4186,
-      "length": 11,
-      "value": "\"iPhone 16\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 4215,
-      "length": 12,
-      "value": "\"iPhone17,4\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 4266,
-      "length": 16,
-      "value": "\"iPhone 16 Plus\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 4300,
-      "length": 12,
-      "value": "\"iPhone17,1\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 4351,
-      "length": 15,
-      "value": "\"iPhone 16 Pro\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 4384,
-      "length": 12,
-      "value": "\"iPhone17,2\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 4435,
-      "length": 19,
-      "value": "\"iPhone 16 Pro Max\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 4472,
-      "length": 9,
-      "value": "\"iPad2,1\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 4483,
-      "length": 9,
-      "value": "\"iPad2,2\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 4494,
-      "length": 9,
-      "value": "\"iPad2,3\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 4505,
-      "length": 9,
-      "value": "\"iPad2,4\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 4523,
-      "length": 8,
-      "value": "\"iPad 2\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 4549,
-      "length": 9,
-      "value": "\"iPad3,1\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 4560,
-      "length": 9,
-      "value": "\"iPad3,2\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 4571,
-      "length": 9,
-      "value": "\"iPad3,3\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 4600,
-      "length": 23,
-      "value": "\"iPad (3rd generation)\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 4641,
-      "length": 9,
-      "value": "\"iPad3,4\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 4652,
-      "length": 9,
-      "value": "\"iPad3,5\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 4663,
-      "length": 9,
-      "value": "\"iPad3,6\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 4692,
-      "length": 23,
-      "value": "\"iPad (4th generation)\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 4733,
-      "length": 10,
-      "value": "\"iPad6,11\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 4745,
-      "length": 10,
-      "value": "\"iPad6,12\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 4784,
-      "length": 23,
-      "value": "\"iPad (5th generation)\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 4825,
-      "length": 9,
-      "value": "\"iPad7,5\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 4836,
-      "length": 9,
-      "value": "\"iPad7,6\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 4876,
-      "length": 23,
-      "value": "\"iPad (6th generation)\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 4917,
-      "length": 10,
-      "value": "\"iPad7,11\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 4929,
-      "length": 10,
-      "value": "\"iPad7,12\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 4968,
-      "length": 23,
-      "value": "\"iPad (7th generation)\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 5009,
-      "length": 10,
-      "value": "\"iPad11,6\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 5021,
-      "length": 10,
-      "value": "\"iPad11,7\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 5060,
-      "length": 23,
-      "value": "\"iPad (8th generation)\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 5101,
-      "length": 10,
-      "value": "\"iPad12,1\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 5113,
-      "length": 10,
-      "value": "\"iPad12,2\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 5152,
-      "length": 23,
-      "value": "\"iPad (9th generation)\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 5193,
-      "length": 11,
-      "value": "\"iPad13,18\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 5206,
-      "length": 11,
-      "value": "\"iPad13,19\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 5244,
-      "length": 24,
-      "value": "\"iPad (10th generation)\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 5286,
-      "length": 9,
-      "value": "\"iPad4,1\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 5297,
-      "length": 9,
-      "value": "\"iPad4,2\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 5308,
-      "length": 9,
-      "value": "\"iPad4,3\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 5337,
-      "length": 10,
-      "value": "\"iPad Air\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 5365,
-      "length": 9,
-      "value": "\"iPad5,3\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 5376,
-      "length": 9,
-      "value": "\"iPad5,4\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 5416,
-      "length": 12,
-      "value": "\"iPad Air 2\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 5446,
-      "length": 10,
-      "value": "\"iPad11,3\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 5458,
-      "length": 10,
-      "value": "\"iPad11,4\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 5497,
-      "length": 27,
-      "value": "\"iPad Air (3rd generation)\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 5542,
-      "length": 10,
-      "value": "\"iPad13,1\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 5554,
-      "length": 10,
-      "value": "\"iPad13,2\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 5593,
-      "length": 27,
-      "value": "\"iPad Air (4th generation)\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 5638,
-      "length": 11,
-      "value": "\"iPad13,16\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 5651,
-      "length": 11,
-      "value": "\"iPad13,17\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 5689,
-      "length": 27,
-      "value": "\"iPad Air (5th generation)\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 5734,
-      "length": 10,
-      "value": "\"iPad14,8\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 5746,
-      "length": 10,
-      "value": "\"iPad14,9\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 5785,
-      "length": 23,
-      "value": "\"iPad Air 11-inch (M2)\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 5826,
-      "length": 11,
-      "value": "\"iPad14,10\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 5839,
-      "length": 11,
-      "value": "\"iPad14,11\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 5877,
-      "length": 23,
-      "value": "\"iPad Air 13-inch (M2)\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 5918,
-      "length": 9,
-      "value": "\"iPad2,5\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 5929,
-      "length": 9,
-      "value": "\"iPad2,6\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 5940,
-      "length": 9,
-      "value": "\"iPad2,7\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 5969,
-      "length": 11,
-      "value": "\"iPad mini\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 5998,
-      "length": 9,
-      "value": "\"iPad4,4\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 6009,
-      "length": 9,
-      "value": "\"iPad4,5\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 6020,
-      "length": 9,
-      "value": "\"iPad4,6\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 6049,
-      "length": 13,
-      "value": "\"iPad mini 2\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 6080,
-      "length": 9,
-      "value": "\"iPad4,7\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 6091,
-      "length": 9,
-      "value": "\"iPad4,8\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 6102,
-      "length": 9,
-      "value": "\"iPad4,9\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 6131,
-      "length": 13,
-      "value": "\"iPad mini 3\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 6162,
-      "length": 9,
-      "value": "\"iPad5,1\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 6173,
-      "length": 9,
-      "value": "\"iPad5,2\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 6213,
-      "length": 13,
-      "value": "\"iPad mini 4\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 6244,
-      "length": 10,
-      "value": "\"iPad11,1\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 6256,
-      "length": 10,
-      "value": "\"iPad11,2\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 6295,
-      "length": 28,
-      "value": "\"iPad mini (5th generation)\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 6341,
-      "length": 10,
-      "value": "\"iPad14,1\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 6353,
-      "length": 10,
-      "value": "\"iPad14,2\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 6392,
-      "length": 28,
-      "value": "\"iPad mini (6th generation)\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 6438,
-      "length": 9,
-      "value": "\"iPad6,3\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 6449,
-      "length": 9,
-      "value": "\"iPad6,4\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 6489,
-      "length": 21,
-      "value": "\"iPad Pro (9.7-inch)\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 6528,
-      "length": 9,
-      "value": "\"iPad7,3\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 6539,
-      "length": 9,
-      "value": "\"iPad7,4\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 6579,
-      "length": 22,
-      "value": "\"iPad Pro (10.5-inch)\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 6619,
-      "length": 9,
-      "value": "\"iPad8,1\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 6630,
-      "length": 9,
-      "value": "\"iPad8,2\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 6641,
-      "length": 9,
-      "value": "\"iPad8,3\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 6652,
-      "length": 9,
-      "value": "\"iPad8,4\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 6670,
-      "length": 37,
-      "value": "\"iPad Pro (11-inch) (1st generation)\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 6725,
-      "length": 9,
-      "value": "\"iPad8,9\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 6736,
-      "length": 10,
-      "value": "\"iPad8,10\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 6776,
-      "length": 37,
-      "value": "\"iPad Pro (11-inch) (2nd generation)\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 6831,
-      "length": 10,
-      "value": "\"iPad13,4\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 6843,
-      "length": 10,
-      "value": "\"iPad13,5\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 6855,
-      "length": 10,
-      "value": "\"iPad13,6\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 6867,
-      "length": 10,
-      "value": "\"iPad13,7\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 6903,
-      "length": 37,
-      "value": "\"iPad Pro (11-inch) (3rd generation)\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 6958,
-      "length": 10,
-      "value": "\"iPad14,3\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 6970,
-      "length": 10,
-      "value": "\"iPad14,4\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 7009,
-      "length": 37,
-      "value": "\"iPad Pro (11-inch) (4th generation)\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 7064,
-      "length": 9,
-      "value": "\"iPad6,7\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 7075,
-      "length": 9,
-      "value": "\"iPad6,8\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 7115,
-      "length": 39,
-      "value": "\"iPad Pro (12.9-inch) (1st generation)\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 7172,
-      "length": 9,
-      "value": "\"iPad7,1\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 7183,
-      "length": 9,
-      "value": "\"iPad7,2\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 7223,
-      "length": 39,
-      "value": "\"iPad Pro (12.9-inch) (2nd generation)\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 7280,
-      "length": 9,
-      "value": "\"iPad8,5\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 7291,
-      "length": 9,
-      "value": "\"iPad8,6\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 7302,
-      "length": 9,
-      "value": "\"iPad8,7\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 7313,
-      "length": 9,
-      "value": "\"iPad8,8\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 7331,
-      "length": 39,
-      "value": "\"iPad Pro (12.9-inch) (3rd generation)\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 7388,
-      "length": 10,
-      "value": "\"iPad8,11\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 7400,
-      "length": 10,
-      "value": "\"iPad8,12\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 7439,
-      "length": 39,
-      "value": "\"iPad Pro (12.9-inch) (4th generation)\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 7496,
-      "length": 10,
-      "value": "\"iPad13,8\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 7508,
-      "length": 10,
-      "value": "\"iPad13,9\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 7520,
-      "length": 11,
-      "value": "\"iPad13,10\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 7533,
-      "length": 11,
-      "value": "\"iPad13,11\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 7569,
-      "length": 39,
-      "value": "\"iPad Pro (12.9-inch) (5th generation)\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 7626,
-      "length": 10,
-      "value": "\"iPad14,5\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 7638,
-      "length": 10,
-      "value": "\"iPad14,6\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 7677,
-      "length": 39,
-      "value": "\"iPad Pro (12.9-inch) (6th generation)\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 7734,
-      "length": 10,
-      "value": "\"iPad16,3\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 7746,
-      "length": 10,
-      "value": "\"iPad16,4\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 7785,
-      "length": 23,
-      "value": "\"iPad Pro 11-inch (M4)\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 7826,
-      "length": 10,
-      "value": "\"iPad16,5\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 7838,
-      "length": 10,
-      "value": "\"iPad16,6\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 7877,
-      "length": 23,
-      "value": "\"iPad Pro 13-inch (M4)\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 7918,
-      "length": 12,
-      "value": "\"AppleTV5,3\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 7969,
-      "length": 10,
-      "value": "\"Apple TV\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 7997,
-      "length": 12,
-      "value": "\"AppleTV6,2\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 8048,
-      "length": 13,
-      "value": "\"Apple TV 4K\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 8079,
-      "length": 19,
-      "value": "\"AudioAccessory1,1\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 8130,
-      "length": 9,
-      "value": "\"HomePod\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 8157,
-      "length": 19,
-      "value": "\"AudioAccessory5,1\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 8208,
-      "length": 14,
-      "value": "\"HomePod mini\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 8240,
-      "length": 6,
-      "value": "\"i386\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 8248,
-      "length": 8,
-      "value": "\"x86_64\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 8258,
-      "length": 7,
-      "value": "\"arm64\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 8359,
-      "length": 28,
-      "value": "\"SIMULATOR_MODEL_IDENTIFIER\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 8392,
-      "length": 5,
-      "value": "\"iOS\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 8422,
-      "length": 34,
-      "value": "\"Simulator \""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
-      "kind": "StringLiteral",
-      "offset": 8455,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "Array",
-      "offset": 9154,
+      "offset": 1217,
       "length": 102,
       "value": "[\"iPhone 7\", \"iPhone 7 Plus\", \"iPhone SE\", \"iPhone 8\", \"iPhone 8 Plus\", \"iPhone 6s Plus\", \"iPhone 6s\"]"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 9910,
+      "offset": 1973,
       "length": 11,
       "value": "\"iPhone8,1\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 9923,
+      "offset": 1986,
       "length": 11,
       "value": "\"iPhone8,2\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 9936,
+      "offset": 1999,
       "length": 11,
       "value": "\"iPhone8,4\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 9949,
+      "offset": 2012,
       "length": 11,
       "value": "\"iPhone9,1\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 9962,
+      "offset": 2025,
       "length": 11,
       "value": "\"iPhone9,3\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 9975,
+      "offset": 2038,
       "length": 11,
       "value": "\"iPhone9,2\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 9988,
+      "offset": 2051,
       "length": 11,
       "value": "\"iPhone9,4\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 10013,
+      "offset": 2076,
       "length": 12,
       "value": "\"iPhone10,1\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 10027,
+      "offset": 2090,
       "length": 12,
       "value": "\"iPhone10,4\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 10041,
+      "offset": 2104,
       "length": 12,
       "value": "\"iPhone10,2\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 10055,
+      "offset": 2118,
       "length": 12,
       "value": "\"iPhone10,5\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "FloatLiteral",
-      "offset": 10096,
+      "offset": 2159,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 10174,
+      "offset": 2237,
       "length": 12,
       "value": "\"iPhone10,3\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 10188,
+      "offset": 2251,
       "length": 12,
       "value": "\"iPhone10,6\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 10202,
+      "offset": 2265,
       "length": 12,
       "value": "\"iPhone11,2\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 10216,
+      "offset": 2279,
       "length": 12,
       "value": "\"iPhone11,4\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 10230,
+      "offset": 2293,
       "length": 12,
       "value": "\"iPhone11,6\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 10244,
+      "offset": 2307,
       "length": 12,
       "value": "\"iPhone12,3\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 10258,
+      "offset": 2321,
       "length": 12,
       "value": "\"iPhone12,5\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "FloatLiteral",
-      "offset": 10299,
+      "offset": 2362,
       "length": 4,
       "value": "39.0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 10348,
+      "offset": 2411,
       "length": 12,
       "value": "\"iPhone11,8\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 10362,
+      "offset": 2425,
       "length": 12,
       "value": "\"iPhone12,1\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "FloatLiteral",
-      "offset": 10403,
+      "offset": 2466,
       "length": 4,
       "value": "41.5"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 10461,
+      "offset": 2524,
       "length": 12,
       "value": "\"iPhone13,1\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 10475,
+      "offset": 2538,
       "length": 12,
       "value": "\"iPhone14,4\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "FloatLiteral",
-      "offset": 10516,
+      "offset": 2579,
       "length": 4,
       "value": "44.0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 10582,
+      "offset": 2645,
       "length": 12,
       "value": "\"iPhone13,2\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 10596,
+      "offset": 2659,
       "length": 12,
       "value": "\"iPhone13,3\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 10610,
+      "offset": 2673,
       "length": 12,
       "value": "\"iPhone14,5\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 10624,
+      "offset": 2687,
       "length": 12,
       "value": "\"iPhone14,2\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "FloatLiteral",
-      "offset": 10665,
+      "offset": 2728,
       "length": 5,
       "value": "47.33"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 10730,
+      "offset": 2793,
       "length": 12,
       "value": "\"iPhone13,4\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 10744,
+      "offset": 2807,
       "length": 12,
       "value": "\"iPhone14,3\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "FloatLiteral",
-      "offset": 10785,
+      "offset": 2848,
       "length": 5,
       "value": "53.33"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 10860,
+      "offset": 2923,
       "length": 10,
       "value": "\"iPad13,1\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 10872,
+      "offset": 2935,
       "length": 10,
       "value": "\"iPad13,2\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 10884,
+      "offset": 2947,
       "length": 9,
       "value": "\"iPad8,9\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 10895,
+      "offset": 2958,
       "length": 10,
       "value": "\"iPad8,10\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 10907,
+      "offset": 2970,
       "length": 9,
       "value": "\"iPad8,1\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 10918,
+      "offset": 2981,
       "length": 9,
       "value": "\"iPad8,2\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 10929,
+      "offset": 2992,
       "length": 9,
       "value": "\"iPad8,3\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 10940,
+      "offset": 3003,
       "length": 9,
       "value": "\"iPad8,4\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 10951,
+      "offset": 3014,
       "length": 9,
       "value": "\"iPad8,5\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 10974,
+      "offset": 3037,
       "length": 9,
       "value": "\"iPad8,6\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 10985,
+      "offset": 3048,
       "length": 9,
       "value": "\"iPad8,7\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 10996,
+      "offset": 3059,
       "length": 9,
       "value": "\"iPad8,8\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 11007,
+      "offset": 3070,
       "length": 10,
       "value": "\"iPad8,11\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 11019,
+      "offset": 3082,
       "length": 10,
       "value": "\"iPad8,12\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 11031,
+      "offset": 3094,
       "length": 10,
       "value": "\"iPad13,4\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 11043,
+      "offset": 3106,
       "length": 10,
       "value": "\"iPad13,5\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 11055,
+      "offset": 3118,
       "length": 10,
       "value": "\"iPad13,6\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 11067,
+      "offset": 3130,
       "length": 10,
       "value": "\"iPad13,7\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 11091,
+      "offset": 3154,
       "length": 10,
       "value": "\"iPad13,8\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 11103,
+      "offset": 3166,
       "length": 10,
       "value": "\"iPad13,9\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 11115,
+      "offset": 3178,
       "length": 11,
       "value": "\"iPad13,10\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 11128,
+      "offset": 3191,
       "length": 11,
       "value": "\"iPad13,11\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "FloatLiteral",
-      "offset": 11168,
+      "offset": 3231,
       "length": 4,
       "value": "18.0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/DeviceInfo.swift",
       "kind": "FloatLiteral",
-      "offset": 11259,
+      "offset": 3322,
       "length": 5,
       "value": "47.33"
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/ScanningUI.swift",
-      "kind": "StringLiteral",
-      "offset": 9661,
-      "length": 5,
-      "value": "\"bla\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/ScanningUI.swift",
-      "kind": "StringLiteral",
-      "offset": 9736,
-      "length": 9,
-      "value": "\"Main St\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/ScanningUI.swift",
-      "kind": "StringLiteral",
-      "offset": 9753,
-      "length": 9,
-      "value": "\"Anytown\""
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/ScanningUI.swift",
-      "kind": "StringLiteral",
-      "offset": 9773,
-      "length": 10,
-      "value": "\"Lalaland\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CaptureOptions.swift",
@@ -13263,114 +11986,163 @@
       "value": "5"
     },
     {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CaptureOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 928,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Public\/CaptureOptions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 933,
+      "length": 1,
+      "value": "6"
+    },
+    {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/ScanningViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 637,
+      "offset": 663,
       "length": 7,
       "value": "\"00:00\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/ScanningViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 688,
+      "offset": 714,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/ScanningViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 746,
+      "offset": 772,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/ScanningViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 796,
+      "offset": 822,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/ScanningViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1207,
+      "offset": 877,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/ScanningViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 921,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/ScanningViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1298,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/ScanningViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 1317,
+      "offset": 1408,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/ScanningViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 1636,
+      "offset": 1727,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/ScanningViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 1649,
+      "offset": 1740,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/ScanningViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 1706,
+      "offset": 1797,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/ScanningViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 1772,
+      "offset": 1863,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/ScanningViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 2382,
+      "offset": 2473,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/ScanningViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 2604,
+      "offset": 2566,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/ScanningViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2849,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/ScanningViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2973,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/ScanningViewModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3023,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/ScanningViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 4837,
+      "offset": 5919,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/ScanningViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 11080,
+      "offset": 11986,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/ScanningViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 11126,
+      "offset": 12032,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/UI\/Scanning\/ScanningViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 11165,
+      "offset": 12071,
       "length": 1,
       "value": "0"
     },
@@ -13433,37 +12205,23 @@
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/ARSessionHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 638,
+      "offset": 696,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/ARSessionHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 670,
+      "offset": 728,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/ARSessionHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 701,
+      "offset": 759,
       "length": 3,
       "value": "300"
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/ARSessionHelper.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1490,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/ARSessionHelper.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1733,
-      "length": 1,
-      "value": "0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/Video\/VideoWritingHelper.swift",
@@ -13481,22 +12239,29 @@
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/Video\/VideoWritingHelper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 803,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/Video\/VideoWritingHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 837,
+      "offset": 882,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/Video\/VideoWritingHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 912,
+      "offset": 957,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/Video\/VideoWritingHelper.swift",
       "kind": "Array",
-      "offset": 1059,
+      "offset": 1104,
       "length": 2,
       "value": "[]"
     },
@@ -13508,13 +12273,6 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Helpers\/Zip\/ZIPFoundationZipper.swift",
-      "kind": "IntegerLiteral",
-      "offset": 358,
-      "length": 1,
-      "value": "0"
-    },
-    {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
       "kind": "Array",
       "offset": 463,
@@ -13523,17 +12281,66 @@
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2820,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
       "kind": "StringLiteral",
-      "offset": 3276,
+      "offset": 3422,
       "length": 9,
       "value": "\"default\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
       "kind": "BooleanLiteral",
-      "offset": 3414,
+      "offset": 3560,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3611,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3696,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4045,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10837,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
+      "kind": "BooleanLiteral",
+      "offset": 17150,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
+      "kind": "FloatLiteral",
+      "offset": 20212,
+      "length": 3,
+      "value": "1.0"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/CCCapture.swift",
@@ -13706,100 +12513,107 @@
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/FeedbackGatherer.swift",
       "kind": "StringLiteral",
-      "offset": 272,
+      "offset": 268,
       "length": 14,
       "value": "\"SCAN_DRIFTED\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/FeedbackGatherer.swift",
       "kind": "StringLiteral",
-      "offset": 315,
+      "offset": 311,
       "length": 20,
       "value": "\"SCAN_DRIFTED_ANGLE\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/FeedbackGatherer.swift",
       "kind": "StringLiteral",
-      "offset": 364,
+      "offset": 360,
       "length": 15,
       "value": "\"EXCESS_MOTION\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/FeedbackGatherer.swift",
       "kind": "StringLiteral",
-      "offset": 416,
+      "offset": 412,
       "length": 23,
       "value": "\"INSUFFICIENT_FEATURES\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/FeedbackGatherer.swift",
       "kind": "StringLiteral",
-      "offset": 468,
+      "offset": 464,
       "length": 15,
       "value": "\"SIDEWAYS_WALK\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/FeedbackGatherer.swift",
       "kind": "StringLiteral",
-      "offset": 520,
+      "offset": 516,
       "length": 23,
       "value": "\"INSUFFICIENT_LIGHTING\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/FeedbackGatherer.swift",
       "kind": "StringLiteral",
-      "offset": 573,
+      "offset": 569,
       "length": 16,
       "value": "\"FLOOR_SCANNING\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/FeedbackGatherer.swift",
       "kind": "StringLiteral",
-      "offset": 621,
+      "offset": 617,
       "length": 18,
       "value": "\"CEILING_SCANNING\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/FeedbackGatherer.swift",
       "kind": "StringLiteral",
-      "offset": 674,
+      "offset": 670,
       "length": 19,
       "value": "\"WRONG_ORIENTATION\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/FeedbackGatherer.swift",
       "kind": "StringLiteral",
-      "offset": 728,
+      "offset": 724,
       "length": 21,
       "value": "\"HORIZONTAL_SCANNING\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/FeedbackGatherer.swift",
       "kind": "StringLiteral",
-      "offset": 777,
+      "offset": 773,
       "length": 15,
       "value": "\"FAST_ROTATION\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/FeedbackGatherer.swift",
       "kind": "StringLiteral",
-      "offset": 817,
+      "offset": 813,
       "length": 11,
       "value": "\"TOO_CLOSE\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/FeedbackGatherer.swift",
       "kind": "StringLiteral",
-      "offset": 1491,
+      "offset": 1487,
       "length": 15,
       "value": "\"feedback.json\""
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/FeedbackGatherer.swift",
       "kind": "IntegerLiteral",
-      "offset": 1532,
+      "offset": 1528,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/JSON\/FeedbackGatherer.swift",
+      "kind": "Array",
+      "offset": 1565,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/marnix\/Projects\/CubiCasa\/cubicasa-cubicapture-framework\/CubiCapture\/Guides\/CCHaptics.swift",
@@ -14168,147 +12982,224 @@
     {
       "filePath": "\/Users\/marnix\/Library\/Developer\/Xcode\/DerivedData\/CubiCapture-eojkhhwgyyfwbpaqccbabcrlebud\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CubiCapture\/IntermediateBuildFilesPath\/CubiCapture.build\/Release-iphonesimulator\/CubiCapture.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 8412,
+      "offset": 8400,
+      "length": 12,
+      "value": "\"arrow-down\""
+    },
+    {
+      "filePath": "\/Users\/marnix\/Library\/Developer\/Xcode\/DerivedData\/CubiCapture-eojkhhwgyyfwbpaqccbabcrlebud\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CubiCapture\/IntermediateBuildFilesPath\/CubiCapture.build\/Release-iphonesimulator\/CubiCapture.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 8563,
+      "length": 12,
+      "value": "\"arrow-left\""
+    },
+    {
+      "filePath": "\/Users\/marnix\/Library\/Developer\/Xcode\/DerivedData\/CubiCapture-eojkhhwgyyfwbpaqccbabcrlebud\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CubiCapture\/IntermediateBuildFilesPath\/CubiCapture.build\/Release-iphonesimulator\/CubiCapture.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 8728,
+      "length": 13,
+      "value": "\"arrow-right\""
+    },
+    {
+      "filePath": "\/Users\/marnix\/Library\/Developer\/Xcode\/DerivedData\/CubiCapture-eojkhhwgyyfwbpaqccbabcrlebud\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CubiCapture\/IntermediateBuildFilesPath\/CubiCapture.build\/Release-iphonesimulator\/CubiCapture.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 8888,
+      "length": 10,
+      "value": "\"arrow-up\""
+    },
+    {
+      "filePath": "\/Users\/marnix\/Library\/Developer\/Xcode\/DerivedData\/CubiCapture-eojkhhwgyyfwbpaqccbabcrlebud\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CubiCapture\/IntermediateBuildFilesPath\/CubiCapture.build\/Release-iphonesimulator\/CubiCapture.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 9061,
       "length": 18,
       "value": "\"battery-critical\""
     },
     {
       "filePath": "\/Users\/marnix\/Library\/Developer\/Xcode\/DerivedData\/CubiCapture-eojkhhwgyyfwbpaqccbabcrlebud\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CubiCapture\/IntermediateBuildFilesPath\/CubiCapture.build\/Release-iphonesimulator\/CubiCapture.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 8583,
+      "offset": 9232,
       "length": 13,
       "value": "\"battery-low\""
     },
     {
       "filePath": "\/Users\/marnix\/Library\/Developer\/Xcode\/DerivedData\/CubiCapture-eojkhhwgyyfwbpaqccbabcrlebud\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CubiCapture\/IntermediateBuildFilesPath\/CubiCapture.build\/Release-iphonesimulator\/CubiCapture.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 8751,
+      "offset": 9400,
       "length": 14,
       "value": "\"camera-retro\""
     },
     {
       "filePath": "\/Users\/marnix\/Library\/Developer\/Xcode\/DerivedData\/CubiCapture-eojkhhwgyyfwbpaqccbabcrlebud\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CubiCapture\/IntermediateBuildFilesPath\/CubiCapture.build\/Release-iphonesimulator\/CubiCapture.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 8922,
+      "offset": 9569,
+      "length": 14,
+      "value": "\"circle-check\""
+    },
+    {
+      "filePath": "\/Users\/marnix\/Library\/Developer\/Xcode\/DerivedData\/CubiCapture-eojkhhwgyyfwbpaqccbabcrlebud\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CubiCapture\/IntermediateBuildFilesPath\/CubiCapture.build\/Release-iphonesimulator\/CubiCapture.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 9740,
       "length": 15,
       "value": "\"compass-slash\""
     },
     {
       "filePath": "\/Users\/marnix\/Library\/Developer\/Xcode\/DerivedData\/CubiCapture-eojkhhwgyyfwbpaqccbabcrlebud\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CubiCapture\/IntermediateBuildFilesPath\/CubiCapture.build\/Release-iphonesimulator\/CubiCapture.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 9086,
+      "offset": 9904,
       "length": 11,
       "value": "\"eye-slash\""
     },
     {
       "filePath": "\/Users\/marnix\/Library\/Developer\/Xcode\/DerivedData\/CubiCapture-eojkhhwgyyfwbpaqccbabcrlebud\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CubiCapture\/IntermediateBuildFilesPath\/CubiCapture.build\/Release-iphonesimulator\/CubiCapture.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 9261,
+      "offset": 10063,
+      "length": 10,
+      "value": "\"fastTurn\""
+    },
+    {
+      "filePath": "\/Users\/marnix\/Library\/Developer\/Xcode\/DerivedData\/CubiCapture-eojkhhwgyyfwbpaqccbabcrlebud\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CubiCapture\/IntermediateBuildFilesPath\/CubiCapture.build\/Release-iphonesimulator\/CubiCapture.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 10221,
+      "length": 10,
+      "value": "\"fastWalk\""
+    },
+    {
+      "filePath": "\/Users\/marnix\/Library\/Developer\/Xcode\/DerivedData\/CubiCapture-eojkhhwgyyfwbpaqccbabcrlebud\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CubiCapture\/IntermediateBuildFilesPath\/CubiCapture.build\/Release-iphonesimulator\/CubiCapture.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 10395,
       "length": 19,
       "value": "\"fire-flame-curved\""
     },
     {
       "filePath": "\/Users\/marnix\/Library\/Developer\/Xcode\/DerivedData\/CubiCapture-eojkhhwgyyfwbpaqccbabcrlebud\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CubiCapture\/IntermediateBuildFilesPath\/CubiCapture.build\/Release-iphonesimulator\/CubiCapture.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 9437,
+      "offset": 10571,
       "length": 15,
       "value": "\"hourglass-end\""
     },
     {
       "filePath": "\/Users\/marnix\/Library\/Developer\/Xcode\/DerivedData\/CubiCapture-eojkhhwgyyfwbpaqccbabcrlebud\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CubiCapture\/IntermediateBuildFilesPath\/CubiCapture.build\/Release-iphonesimulator\/CubiCapture.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 9607,
+      "offset": 10728,
+      "length": 7,
+      "value": "\"light\""
+    },
+    {
+      "filePath": "\/Users\/marnix\/Library\/Developer\/Xcode\/DerivedData\/CubiCapture-eojkhhwgyyfwbpaqccbabcrlebud\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CubiCapture\/IntermediateBuildFilesPath\/CubiCapture.build\/Release-iphonesimulator\/CubiCapture.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 10890,
       "length": 14,
       "value": "\"lightbulb-on\""
     },
     {
       "filePath": "\/Users\/marnix\/Library\/Developer\/Xcode\/DerivedData\/CubiCapture-eojkhhwgyyfwbpaqccbabcrlebud\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CubiCapture\/IntermediateBuildFilesPath\/CubiCapture.build\/Release-iphonesimulator\/CubiCapture.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 9765,
+      "offset": 11048,
       "length": 8,
       "value": "\"mobile\""
     },
     {
       "filePath": "\/Users\/marnix\/Library\/Developer\/Xcode\/DerivedData\/CubiCapture-eojkhhwgyyfwbpaqccbabcrlebud\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CubiCapture\/IntermediateBuildFilesPath\/CubiCapture.build\/Release-iphonesimulator\/CubiCapture.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 9923,
+      "offset": 11206,
       "length": 11,
       "value": "\"mobilebig\""
     },
     {
       "filePath": "\/Users\/marnix\/Library\/Developer\/Xcode\/DerivedData\/CubiCapture-eojkhhwgyyfwbpaqccbabcrlebud\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CubiCapture\/IntermediateBuildFilesPath\/CubiCapture.build\/Release-iphonesimulator\/CubiCapture.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 10102,
+      "offset": 11385,
       "length": 21,
       "value": "\"person-running-fast\""
     },
     {
       "filePath": "\/Users\/marnix\/Library\/Developer\/Xcode\/DerivedData\/CubiCapture-eojkhhwgyyfwbpaqccbabcrlebud\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CubiCapture\/IntermediateBuildFilesPath\/CubiCapture.build\/Release-iphonesimulator\/CubiCapture.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 10288,
+      "offset": 11571,
       "length": 19,
       "value": "\"proximity-warning\""
     },
     {
       "filePath": "\/Users\/marnix\/Library\/Developer\/Xcode\/DerivedData\/CubiCapture-eojkhhwgyyfwbpaqccbabcrlebud\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CubiCapture\/IntermediateBuildFilesPath\/CubiCapture.build\/Release-iphonesimulator\/CubiCapture.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 10455,
+      "offset": 11738,
       "length": 10,
       "value": "\"relocate\""
     },
     {
       "filePath": "\/Users\/marnix\/Library\/Developer\/Xcode\/DerivedData\/CubiCapture-eojkhhwgyyfwbpaqccbabcrlebud\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CubiCapture\/IntermediateBuildFilesPath\/CubiCapture.build\/Release-iphonesimulator\/CubiCapture.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 10624,
+      "offset": 11907,
       "length": 16,
       "value": "\"roller-coaster\""
     },
     {
       "filePath": "\/Users\/marnix\/Library\/Developer\/Xcode\/DerivedData\/CubiCapture-eojkhhwgyyfwbpaqccbabcrlebud\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CubiCapture\/IntermediateBuildFilesPath\/CubiCapture.build\/Release-iphonesimulator\/CubiCapture.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 10782,
+      "offset": 12067,
+      "length": 8,
+      "value": "\"rotate\""
+    },
+    {
+      "filePath": "\/Users\/marnix\/Library\/Developer\/Xcode\/DerivedData\/CubiCapture-eojkhhwgyyfwbpaqccbabcrlebud\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CubiCapture\/IntermediateBuildFilesPath\/CubiCapture.build\/Release-iphonesimulator\/CubiCapture.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 12217,
       "length": 7,
       "value": "\"route\""
     },
     {
       "filePath": "\/Users\/marnix\/Library\/Developer\/Xcode\/DerivedData\/CubiCapture-eojkhhwgyyfwbpaqccbabcrlebud\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CubiCapture\/IntermediateBuildFilesPath\/CubiCapture.build\/Release-iphonesimulator\/CubiCapture.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 10942,
+      "offset": 12377,
       "length": 13,
       "value": "\"shoe-prints\""
     },
     {
       "filePath": "\/Users\/marnix\/Library\/Developer\/Xcode\/DerivedData\/CubiCapture-eojkhhwgyyfwbpaqccbabcrlebud\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CubiCapture\/IntermediateBuildFilesPath\/CubiCapture.build\/Release-iphonesimulator\/CubiCapture.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 11103,
+      "offset": 12538,
       "length": 10,
       "value": "\"snapshot\""
     },
     {
       "filePath": "\/Users\/marnix\/Library\/Developer\/Xcode\/DerivedData\/CubiCapture-eojkhhwgyyfwbpaqccbabcrlebud\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CubiCapture\/IntermediateBuildFilesPath\/CubiCapture.build\/Release-iphonesimulator\/CubiCapture.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 11262,
+      "offset": 12704,
+      "length": 14,
+      "value": "\"startWalking\""
+    },
+    {
+      "filePath": "\/Users\/marnix\/Library\/Developer\/Xcode\/DerivedData\/CubiCapture-eojkhhwgyyfwbpaqccbabcrlebud\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CubiCapture\/IntermediateBuildFilesPath\/CubiCapture.build\/Release-iphonesimulator\/CubiCapture.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 12867,
       "length": 11,
       "value": "\"thumbs-up\""
     },
     {
       "filePath": "\/Users\/marnix\/Library\/Developer\/Xcode\/DerivedData\/CubiCapture-eojkhhwgyyfwbpaqccbabcrlebud\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CubiCapture\/IntermediateBuildFilesPath\/CubiCapture.build\/Release-iphonesimulator\/CubiCapture.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 11444,
+      "offset": 13049,
       "length": 22,
       "value": "\"triangle-exclamation\""
     },
     {
       "filePath": "\/Users\/marnix\/Library\/Developer\/Xcode\/DerivedData\/CubiCapture-eojkhhwgyyfwbpaqccbabcrlebud\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CubiCapture\/IntermediateBuildFilesPath\/CubiCapture.build\/Release-iphonesimulator\/CubiCapture.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 11614,
+      "offset": 13215,
+      "length": 8,
+      "value": "\"visual\""
+    },
+    {
+      "filePath": "\/Users\/marnix\/Library\/Developer\/Xcode\/DerivedData\/CubiCapture-eojkhhwgyyfwbpaqccbabcrlebud\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CubiCapture\/IntermediateBuildFilesPath\/CubiCapture.build\/Release-iphonesimulator\/CubiCapture.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 13371,
       "length": 10,
       "value": "\"walkleft\""
     },
     {
       "filePath": "\/Users\/marnix\/Library\/Developer\/Xcode\/DerivedData\/CubiCapture-eojkhhwgyyfwbpaqccbabcrlebud\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CubiCapture\/IntermediateBuildFilesPath\/CubiCapture.build\/Release-iphonesimulator\/CubiCapture.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 11774,
+      "offset": 13531,
       "length": 11,
       "value": "\"walkright\""
     }

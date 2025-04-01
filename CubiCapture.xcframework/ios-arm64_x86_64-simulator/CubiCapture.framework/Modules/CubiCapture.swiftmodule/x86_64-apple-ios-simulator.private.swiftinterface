@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
-// swift-module-flags: -target x86_64-apple-ios17.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature ConciseMagicFile -enable-upcoming-feature ForwardTrailingClosures -enable-upcoming-feature StrictConcurrency -enable-upcoming-feature DeprecateApplicationMain -enable-upcoming-feature ImportObjcForwardDeclarations -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature IsolatedDefaultValues -enable-upcoming-feature GlobalConcurrency -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature ImplicitOpenExistentials -enable-upcoming-feature RegionBasedIsolation -enable-bare-slash-regex -module-name CubiCapture
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.1 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target x86_64-apple-ios17.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 6 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -module-name CubiCapture
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
 import ARKit
 import AVFoundation
 import Accelerate
@@ -26,7 +26,7 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 
 final public class ColorSet : Combine.ObservableObject, Swift.Sendable {
-  public init(accent: SwiftUICore.Color, text: SwiftUICore.Color, buttonText: SwiftUICore.Color, background: SwiftUICore.Color, warning: SwiftUICore.Color, warningBorder: [SwiftUICore.Color], info: SwiftUICore.Color, infoBorder: [SwiftUICore.Color], record: SwiftUICore.Color)
+  public init(accent: SwiftUICore.Color, text: SwiftUICore.Color, buttonText: SwiftUICore.Color, background: SwiftUICore.Color, guideBackground: SwiftUICore.Color, warning: SwiftUICore.Color, warningBorder: [SwiftUICore.Color], info: SwiftUICore.Color, infoBorder: [SwiftUICore.Color], record: SwiftUICore.Color, positive: SwiftUICore.Color)
   public static let defaultColorSet: CubiCapture.ColorSet
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
   @objc deinit
@@ -40,7 +40,7 @@ extension UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency public class func animate(withDuration duration: Foundation.TimeInterval, delay: Foundation.TimeInterval, usingSpringWithDamping dampingRatio: CoreFoundation.CGFloat, initialSpringVelocity velocity: CoreFoundation.CGFloat, options: UIKit.UIView.AnimationOptions = [], animations: @escaping () -> Swift.Void) async -> Swift.Bool
 }
 public protocol CubiCaptureDelegate : AnyObject {
-  func didAbortScan(withEvent event: CubiCapture.CubiCaptureEvent)
+  func didAbortScan(withEvent event: CubiCapture.CubiCaptureEvent, canContinue: Swift.Bool)
   func didCompleteScan(location: Foundation.URL)
   func receiveEvent(_ event: CubiCapture.CubiCaptureEvent)
 }
@@ -55,8 +55,9 @@ public struct ScanningFeatures : Swift.OptionSet, Swift.CaseIterable, Swift.Send
   public typealias Element = CubiCapture.ScanningFeatures
   public typealias RawValue = Swift.Int
 }
-extension CubiCapture.ScanningFeatures : Swift.Encodable {
+extension CubiCapture.ScanningFeatures : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public enum PhotoCapturerError : Swift.Error {
   case notPrepared
@@ -76,7 +77,7 @@ extension CubiCapture.PhotoCapturerError : Foundation.LocalizedError {
   }
 }
 @_Concurrency.MainActor public struct CubiCaptureView : SwiftUICore.View {
-  @_Concurrency.MainActor public init(delegate: (any CubiCapture.CubiCaptureDelegate)?, fileName: Swift.String, address: CubiCapture.CubiCaptureAddress?, propertyType: CubiCapture.CubiCapturePropertyType, usesRawDepth: Swift.Bool = false, options: CubiCapture.CaptureOptions = .defaultOptions, colorSet: CubiCapture.ColorSet = .defaultColorSet)
+  @_Concurrency.MainActor public init(delegate: (any CubiCapture.CubiCaptureDelegate)?, fileName: Swift.String, shouldContinueScan: Swift.Bool = false, address: CubiCapture.CubiCaptureAddress?, propertyType: CubiCapture.CubiCapturePropertyType, usesRawDepth: Swift.Bool = false, options: CubiCapture.CaptureOptions = .defaultOptions, colorSet: CubiCapture.ColorSet = .defaultColorSet)
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
@@ -168,6 +169,7 @@ public enum CubiCaptureEventType : Swift.Int, Swift.Sendable {
   case userAborted
   case photoCaptureFailed
   case photoLogWriteFailed
+  case photoMoveFailed
   case sceneMeshWriteFailed
   case noCameraPermission
   case cameraTranslationFrozen
@@ -195,6 +197,8 @@ public enum CubiCaptureEventType : Swift.Int, Swift.Sendable {
   case scanLogEndFailed
   case rezipFailed
   case rezipValidationFailed
+  case readArkitDataFailed
+  case arSessionError
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -227,7 +231,7 @@ public struct CubiCaptureAddress : Swift.Sendable {
 @_hasMissingDesignatedInitializers public class ZipUtilities {
   public static func validateZip(_ zipUrl: Foundation.URL) async -> (any Swift.Error)?
   public static func reZip(_ zipUrl: Foundation.URL, progressHandler: (@Sendable (Swift.Double) -> Swift.Void)?) async -> Swift.Result<Foundation.URL, CubiCapture.ZippingError>
-  public static func capturedPhotos(at folderUrl: Foundation.URL?) -> [Foundation.URL]
+  public static func capturedPhotos(at folderUrl: Foundation.URL) -> [Foundation.URL]
   @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class DeviceInfo : Swift.Sendable {
@@ -257,6 +261,7 @@ public struct CaptureOptions : Swift.OptionSet, Swift.CaseIterable, Swift.Sendab
   public static let storageWarnings: CubiCapture.CaptureOptions
   public static let planeVisualisation: CubiCapture.CaptureOptions
   public static let photoCapturing: CubiCapture.CaptureOptions
+  public static let autosave: CubiCapture.CaptureOptions
   public static let allCases: [CubiCapture.CaptureOptions]
   public static let defaultOptions: CubiCapture.CaptureOptions
   public typealias AllCases = [CubiCapture.CaptureOptions]
@@ -264,8 +269,9 @@ public struct CaptureOptions : Swift.OptionSet, Swift.CaseIterable, Swift.Sendab
   public typealias Element = CubiCapture.CaptureOptions
   public typealias RawValue = Swift.Int
 }
-extension CubiCapture.CaptureOptions : Swift.Encodable {
+extension CubiCapture.CaptureOptions : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class CubiCaptureInfo {
   public static var isSupportedOnDevice: Swift.Bool {
@@ -277,6 +283,7 @@ extension CubiCapture.CaptureOptions : Swift.Encodable {
   public static var sdkBuild: Swift.String {
     get
   }
+  public static func canContinueScan(fileName: Swift.String) -> Swift.Bool
   @objc deinit
 }
 extension CubiCapture.CubiCaptureEventType : Swift.Equatable {}

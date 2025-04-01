@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		MyApNIrCFDTsc7G3tfhtZlHAw3Y=
+		3eBLbwPPl/bMia63oa9rommuR+M=
 		</data>
 		<key>Assets.scnassets/CameraSetup.scn</key>
 		<data>
@@ -16,9 +16,13 @@
 		<data>
 		0owULy2FEQQwJ9bxuuMVHb3z0fk=
 		</data>
+		<key>DeviceModels.plist</key>
+		<data>
+		zsjDPI9FDjamf/zkzCHGHwjUulU=
+		</data>
 		<key>Headers/CubiCapture-Swift.h</key>
 		<data>
-		w3OlbTGvvFHsUBIl/JooOVGaGEg=
+		wNYr50cRccLsAxHmYbxpdR9EZ9k=
 		</data>
 		<key>Headers/CubiCapture.h</key>
 		<data>
@@ -26,55 +30,59 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		2ZqFp8h7j9HNh0O8igtxsja+YW0=
+		Zl9u99eG7bD6MJkX3j5Xne44X7A=
 		</data>
 		<key>Localizable.strings</key>
 		<data>
-		fMnJDzvyKm39BzpqxyLvcZWG9iI=
+		tQVSgRKysx6Cky12Qi5dSbCom1Y=
 		</data>
 		<key>Modules/CubiCapture.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		HDcXV/K9AwgFFNlDQjcoPzG1MNQ=
+		A8wIlwmXGGylllvgboADgEc+CDk=
 		</data>
 		<key>Modules/CubiCapture.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		/g6+a7IAnltqfvZyr1H+YmXvhPA=
+		4Xebts4CVZU4McVM/DXgirJZQ3Q=
 		</data>
 		<key>Modules/CubiCapture.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		DYK9G9kp5NwyOXovh/aYMvKqvG4=
+		FmAFcM3cxD5VhlGVIOW42+EEsag=
 		</data>
 		<key>Modules/CubiCapture.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		/g6+a7IAnltqfvZyr1H+YmXvhPA=
+		4Xebts4CVZU4McVM/DXgirJZQ3Q=
 		</data>
 		<key>Modules/CubiCapture.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		FOoNaXWMSSNVjVeQKhSAY8yZIe0=
+		ihWDMrTtxhgbX1SrvLpwILur3xg=
 		</data>
 		<key>Modules/CubiCapture.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		HDcXV/K9AwgFFNlDQjcoPzG1MNQ=
+		A8wIlwmXGGylllvgboADgEc+CDk=
 		</data>
 		<key>Modules/CubiCapture.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		gOIP1spf1VPt4bxjUIMPLaaE1IM=
+		LxCQxGPb0yzUPIPHR/amhDUqySM=
 		</data>
 		<key>Modules/CubiCapture.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		+Wrjd9rAMMNmwYfVB9a/HoQ5jik=
+		3FjSlflmpLrCtil2bD/6o7XR/oA=
 		</data>
 		<key>Modules/CubiCapture.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		gOIP1spf1VPt4bxjUIMPLaaE1IM=
+		LxCQxGPb0yzUPIPHR/amhDUqySM=
 		</data>
 		<key>Modules/CubiCapture.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		g2sR5CsVx3EaCUb+09d2aCT5wq8=
+		BdUTzGin8lTpJTEiJnNiQ19itw0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		UVUwwJ7sxCo3VHL+9pEllb86BoA=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		9mjWbDkE9JpjpuW/wDB6rzRiRo8=
 		</data>
 		<key>WorkSans-Bold.ttf</key>
 		<data>
@@ -94,11 +102,11 @@
 		</data>
 		<key>default.metallib</key>
 		<data>
-		IDxvdOWay2M6hYi7yrV01PNZnrQ=
+		89/LppDd0PChkTM98zbq3R0plhQ=
 		</data>
 		<key>version.json</key>
 		<data>
-		4c62BdElTo2Kjoa2WJsVbwJl8WY=
+		UsoH4fYaWJie/O+tNob/e5BqACU=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -107,7 +115,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jjGekPn31SxoItSMBlTv8CW0tafWyOcCwJkB2EHyMBM=
+			HfwU29RrV3wuWJSOpw35DFoSXrf1f174EBdhz8Y8NuQ=
 			</data>
 		</dict>
 		<key>Assets.scnassets/CameraSetup.scn</key>
@@ -124,11 +132,18 @@
 			YcywJ2wFdr2JZjOk3US1s9cUV6ifI5nY90MNfNxcENE=
 			</data>
 		</dict>
+		<key>DeviceModels.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ghfOiooGroOfsrEVDm1Dcp+MZMwALf5ZO02Kf3oOUuU=
+			</data>
+		</dict>
 		<key>Headers/CubiCapture-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Hx0cJfPDt4OmVLq6MEWViELRLqs5eIcr10EERvmy/ZE=
+			e0csqaWsKeyNrEjfS2Ru95ei1cP3tFr1m9ViwcrHoJc=
 			</data>
 		</dict>
 		<key>Headers/CubiCapture.h</key>
@@ -142,77 +157,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0TYR3T0B2oRWYb+z99ZVGZ0nEInfRu9yfuL2dqWugCU=
+			oYB88DyAl5vcjP8Po9LGO4sWYtvLUQ7ymuYVdKYeRB0=
 			</data>
 		</dict>
 		<key>Modules/CubiCapture.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2H+Soy99+Xag8Q7ReauNEJ89wwxiB6KhGkbgl/ZT3fs=
+			7Gh5Y8Rc7qAiXWoE2QToSBZaL+yGThUliD0eFEhK8CE=
 			</data>
 		</dict>
 		<key>Modules/CubiCapture.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3sX5/8kXGAEiryFf41MojcvyFwen12bzd20kFPLhSY8=
+			O3dgsJ/xLji2jN5TVN7EMkkkiI1SxhE977xRzkecHQI=
 			</data>
 		</dict>
 		<key>Modules/CubiCapture.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uhwTByfBkkdcU5nyRIBD7UuQDL2nfaulec2wRR+UXtU=
+			UuYo/ucaS1lq9r1uflrSfHOTODeOXASvV1VlNmaGdug=
 			</data>
 		</dict>
 		<key>Modules/CubiCapture.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3sX5/8kXGAEiryFf41MojcvyFwen12bzd20kFPLhSY8=
+			O3dgsJ/xLji2jN5TVN7EMkkkiI1SxhE977xRzkecHQI=
 			</data>
 		</dict>
 		<key>Modules/CubiCapture.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bcJDDCk3gMXz+IlsFfgk/T2k+6935rcRYJIM7fNzd3c=
+			W79xo+1+DLxN/Tua6FwsnXOtrpb6vZ6WEaDc2Rsoolo=
 			</data>
 		</dict>
 		<key>Modules/CubiCapture.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2H+Soy99+Xag8Q7ReauNEJ89wwxiB6KhGkbgl/ZT3fs=
+			7Gh5Y8Rc7qAiXWoE2QToSBZaL+yGThUliD0eFEhK8CE=
 			</data>
 		</dict>
 		<key>Modules/CubiCapture.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5TZGXfvV3pht8kTdd2BLXy1iMzRYBD0/nzThTxjfjdM=
+			4oK8pQkMR+w8rqPqB1V0IsyhkSTNyUEfMaBeIoXhlUk=
 			</data>
 		</dict>
 		<key>Modules/CubiCapture.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vJxV1ZJamnbv3VDZEfOJdGmtykr5i7DQMK52LJ0DR5Q=
+			AsRApkUhAbWWH3EeZBEXiUr0kYWnmzjfHzzy9zFTdGg=
 			</data>
 		</dict>
 		<key>Modules/CubiCapture.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5TZGXfvV3pht8kTdd2BLXy1iMzRYBD0/nzThTxjfjdM=
+			4oK8pQkMR+w8rqPqB1V0IsyhkSTNyUEfMaBeIoXhlUk=
 			</data>
 		</dict>
 		<key>Modules/CubiCapture.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Zr1GTRHyNiUY0jUjxDtjhPIcl1kGRtESXvHOvZUhab0=
+			5NOryIFKIkp4XIgNGWWFirGUmZjL6tQ2ZBLfTZo0/Xg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -220,6 +235,13 @@
 			<key>hash2</key>
 			<data>
 			x3CRHbHQlGHbw3+vjhepEfxM4CbDXNBCWNSNsThTIp0=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Vwn1r3lbnAwCltxPJO4LW9PqxdFSmIS5ChZq5MktMf4=
 			</data>
 		</dict>
 		<key>WorkSans-Bold.ttf</key>
@@ -254,14 +276,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JmcOX8YkV3D1398vtVFachkFQHa7Uq2FbwxCfxC2uSc=
+			7WNqklbp85YREeRa5HFA5GlhDFlZLnGgeyDtSPHqfbE=
 			</data>
 		</dict>
 		<key>version.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			d96fVGhU8jAIlHL41jLRYjNNwG6wQaKIr/fU8daRc8s=
+			Tgcwb+0vAV/Gb5QEhg3dPrYmbbAZtN5miNBi4/l87KY=
 			</data>
 		</dict>
 	</dict>
