@@ -10,18 +10,15 @@ let package = Package(
         .library(
             name: "CubiCaptureSDK",
             type: .dynamic,
-            targets: ["CubiCapture", "CubiCaptureDeps"]),
+            targets: ["CubiCaptureWrapper"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/weichsel/ZIPFoundation.git", from: "0.9.19"),
-        .package(url: "https://github.com/marmelroy/Zip.git", from: "2.1.0")
+        .package(url: "https://github.com/weichsel/ZIPFoundation.git", from: "0.9.19")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
-        .target(
-            name: "CubiCaptureDeps",
-            dependencies: ["ZIPFoundation", "Zip"]),
-        .binaryTarget(name: "CubiCapture", path: "./CubiCapture.xcframework")
+        .target(name: "CubiCaptureWrapper", dependencies: ["CubiCapture", "ZIPFoundation"]),
+        .binaryTarget(name: "CubiCapture", path: "./Sources/CubiCapture.xcframework")
     ]
 )

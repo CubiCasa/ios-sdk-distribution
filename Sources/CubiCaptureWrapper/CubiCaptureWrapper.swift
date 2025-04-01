@@ -1,4 +1,4 @@
 // The Swift Programming Language
 // https://docs.swift.org/swift-book
-import Zip
+import CubiCapture
 import ZIPFoundation
