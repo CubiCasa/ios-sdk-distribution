@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-compiler-version: Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
 // swift-module-flags: -target arm64-apple-ios17.0 -enable-objc-interop -enable-library-evolution -swift-version 6 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -module-name CubiCapture
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import ARKit
 import AVFoundation
 import Accelerate
@@ -15,6 +15,7 @@ import DeveloperToolsSupport
 import Foundation
 import MetalKit
 import MetalPerformanceShaders
+import Observation
 import RealityKit
 import SceneKit
 import Swift
@@ -25,11 +26,12 @@ import _SceneKit_SwiftUI
 import _StringProcessing
 import _SwiftConcurrencyShims
 
-final public class ColorSet : Combine.ObservableObject, Swift.Sendable {
+final public class ColorSet : Swift.Sendable {
   public init(accent: SwiftUICore.Color, text: SwiftUICore.Color, buttonText: SwiftUICore.Color, background: SwiftUICore.Color, guideBackground: SwiftUICore.Color, warning: SwiftUICore.Color, warningBorder: [SwiftUICore.Color], info: SwiftUICore.Color, infoBorder: [SwiftUICore.Color], record: SwiftUICore.Color, positive: SwiftUICore.Color)
   public static let defaultColorSet: CubiCapture.ColorSet
-  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
   @objc deinit
+}
+extension CubiCapture.ColorSet : Observation.Observable {
 }
 extension UIKit.UIView {
   @discardableResult
@@ -64,6 +66,7 @@ public enum PhotoCapturerError : Swift.Error {
   case imageCompress
   case fileWrite
   case fileMove
+  case logWrite
   case generic
   public static func == (a: CubiCapture.PhotoCapturerError, b: CubiCapture.PhotoCapturerError) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
@@ -172,6 +175,7 @@ public enum CubiCaptureEventType : Swift.Int, Swift.Sendable {
   case photoMoveFailed
   case sceneMeshWriteFailed
   case noCameraPermission
+  case cannotSetupCamera
   case cameraTranslationFrozen
   case cameraOrientationFrozen
   case cameraTranslationAndOrientationFrozen
