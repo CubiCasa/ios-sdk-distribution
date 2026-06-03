@@ -7,5 +7,4 @@ framework module CubiCapture {
 
 module CubiCapture.Swift {
   header "CubiCapture-Swift.h"
-  requires objc
 }
